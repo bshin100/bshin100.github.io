@@ -9,9 +9,9 @@ Time frame: November, 2019 - Present
 
 Ever seen BattleBots the TV show before? If not, it's essentially lots of 250-lb remote-operated robots that destructively battle in a contained box with high-power spinners, drums, or flippers. It's hard to describe in text, so I would recommend looking up a quick clip online. The power stored in these weapons are unfathomable. These cost upwards of a luxury vehicle and more.
 
-This project is similar to those robots, but on a much smaller (and cheaper) scale. I decided to do this under the guidance and funding of the combat robotics club at WPI. 
+This project is similar to those robots but on a much smaller (and cheaper) scale. I decided to do this under the guidance and funding of the combat robotics club at WPI. 
 
-The initial design was completed in November 2019 and parts were purchased shortly after. Unfortunately given the timeline of a busy semester and then a global pandemic, not much of this project has yet to come to fruition. More on this soon!
+The initial design was completed in November, 2019, and parts were purchased shortly after. Unfortunately, given the timeline of a busy semester and then a global pandemic, not much of this project has yet to come to fruition. More on this soon!
 
 Here is the current design of the robot:
 
