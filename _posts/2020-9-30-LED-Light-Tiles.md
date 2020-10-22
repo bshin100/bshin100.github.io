@@ -5,7 +5,7 @@ title: LED Light Tiles
 
 > Custom 3D printed light tiles using programmable WS2812B LEDs, inspired by nanoleaf.
 
-###Time frame: January, 2019 - October, 2020
+### Time frame: January, 2019 - October, 2020
 
 ![Finished product.](/images/moodlite.gif "Finished Product.")
 
@@ -24,7 +24,7 @@ The project involved a lot of careful planning and soldering between each strip 
 
 The most challenging part was the programming on the microcontroller. I couldn't manage to run even a basic test to drive the LEDs despite hours of research and combing through forums. I believe it had something to do with logic-level or timing, but even with a logic-level converter, it still didn't work. The code base for this moodlite project is also open source. I wanted to just get the LEDs running so I currently run the tiles with a comparatively primitive Arduino Nano chip that is not Wi-Fi enabled, with some basic code. Earlier in 2020, I decided to give in and purchase an ESP8266 board which is what the project was designed to run on, but upon an initial test, I still had no luck even on vanilla moodlite code. I took a break on this project to work on some others.
 
-###Update 10/22/2020
+### Update 10/22/2020
 Woohoo! I managed to get the software and tiles running yesterday afternoon. Whether I should've spent that time working on this project or my homework is a different subject. Not entirely sure what changed but it works as intended. I started by flashing the basic test code on the ESP32 board, and running a small test strip of the programmable LEDs powered by the 5V output from the board. It miraculously worked despite the fact that it didn't in the past when I changed nothing. This also proved that a logic-level converter from the ESP32's 3.3v data line to the LEDs' 5V data was not necessarily needed to successfully drive the LEDs (but it would be good practice to do so in the future). I also flashed the same basic code to the ESP8266 board, and it also worked. So, both of the Arduino-based Wi-Fi boards were now confirmed to work with my LEDs. 
 
 I proceeded to wipe the EEPROM of the ESP8266 board and flash the latest release of the moodlite software, and changed a few configuration settings to match my setup. The web server was up in a few minutes and I was able to access it through my browser and play with the web-side settings. I connected the LEDs the same (correct) way I have been, and to my delight, the commands sent from the server almost instantly were reflected in the patterns the LEDs showed. I'm really not sure what was different about this attempt other than using the latest release of the code, which may have fixed things. What was weird though was that the previous versions were also shown to work amongst the community of other makers who recreated this project. There was a slight error in the JavaScript back-end of the web server that disabled the custom RGB color-picking functionality, but after a quick search on the moodlite forums, this was solved. 
@@ -36,6 +36,6 @@ I am extremely happy that this project is now fully complete, and my LED wall ti
 In the future, I intend to perhaps port IFTT protocols (or utilize the integrated MQTT capability) so the tiles can be controlled via voice assistants like the Amazon Alexa. Another cool feature would be to integrate sound-reactivity with a microphone module so it can change with the beat of some music.
 
 
-Total cost of the project is about $80, including filament costs.
+**Total Cost:** about $80, including filament costs.
 
-*Last Updated: 10/22/2020
+*Last Updated: 10/22/2020*

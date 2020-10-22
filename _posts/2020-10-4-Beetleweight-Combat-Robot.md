@@ -5,7 +5,7 @@ title: Beetleweight Combat Robot
 
 > Custom engineered and fabricated combat robot constrained under 3lbs.
 
-Time frame: November, 2019 - Present
+### Time frame: November, 2019 - Present
 
 Ever seen BattleBots the TV show before? If not, it's essentially lots of 250-lb remote-operated robots that destructively battle in a contained box with high-power spinners, drums, or flippers. It's hard to describe in text, so I would recommend looking up a quick clip online. The power stored in these weapons are unfathomable. These cost upwards of a luxury vehicle and more.
 
@@ -21,7 +21,7 @@ The aluminum front panel milled:
 
 ![Milled Aluminum Front Panel](/images/beetle-front-panel.JPG "Milled Aluminum Front Panel")
 
-Accumulated costs so far: roughly $500.
+**Total Cost:** roughly $500, so far.
 
 
 
