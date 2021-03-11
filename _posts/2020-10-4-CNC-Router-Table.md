@@ -15,7 +15,7 @@ I decided on a build volume of 24" x 18" x 3" which is comparatively small to th
 Here's what the CNC Router will look similar to:
 ![V1 Engineering MPCNC Primo](/images/MPCNC/Primo-scaled.jpg "V1 Engineering MPCNC Primo")
 
-*Note: Throughout the course of the build, a new and improved version of the design was published. Bummer. I was in too deep at this point, so I continued with the last-gen version.
+*Note: Throughout the course of the build, a new and improved version of the design was published. Bummer. I was in too deep at this point, so I continued with the last-gen version.*
 
 I purchased the components individually (self-sourced) earlier in June and began 3D printing the parts. The dimensional accuracy and structural integrity of these printed parts are pretty important to having a precise machine. I encountered some difficulty with under-extrusion on my 3D printer, which was frustrating since I had about a year of problem-free printing prior to this project. I managed to get all of the parts printed in PLA, using a little over 1.5 kg. Oddly enough, I encountered another 3D printing issue regarding the smoothness of the curved surfaces:
 
@@ -33,11 +33,11 @@ There was a slight pause in the project as I had to return to college. More to c
 ### Update Winter 2020-2021
 It's finished! I certainly could've banged this out by the end of the summer, however I enjoyed taking my time with this build (and spending some much needed time with the friends and family I couldn't see during lock-down) as it has allowed me to think everything through in every step of the process.
 
-CNC almost assembled! Just to mount the stepper motors, belts, pulleys, and wiring.
 ![CNC Assembly](/images/MPCNC/cnc-more.jpeg "CNC almost assembled!")
+CNC almost assembled! Just to mount the stepper motors, belts, pulleys, and wiring.
 
-Some wire management, using a cheap tape measure to give some rigidity to the cable harness. For protection and a cleaner look, I wrapped all the wires in nylon cable sleeving. I also opted to use a different "spindle" than what was recommended from the plans - my Makita compact router is more powerful and has variable speed control, which makes my machine more robust.
 ![CNC Done](/images/MPCNC/cnc-wires.jpeg "CNC wiring, with tape measure trick")
+Some wire management, using a cheap tape measure to give some rigidity to the cable harness. For protection and a cleaner look, I wrapped all the wires in nylon cable sleeving. I also opted to use a different "spindle" than what was recommended from the plans - my Makita compact router is more powerful and has variable speed control, which makes my machine more robust.
 
 The choice of firmware to run on the mainboard to control the CNC router was Marlin. While Marlin is not typically used for CNC machines (it's predominantly used for 3D printing), it has features that allow it to work, and I was familiar with it since it's the same firmware on my 3D printer. The other alternative was GRBL, which I may try in the future to see the features it has that Marlin does not. I pulled the latest bugfix version of Marlin from the official GitHub, and tweaked the configuration files. With my particular control board, the BTT SKR V1.4 Turbo, flashing firmware was as easy as compiling it onto a microSD card and then powering up the mainboard.
 
