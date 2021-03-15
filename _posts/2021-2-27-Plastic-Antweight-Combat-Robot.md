@@ -28,7 +28,7 @@ Here is the robot assembled (I had not put on the foam wheels until after the fi
 
 ![Robot Assembled 2](/images/antweight/ant-assembled-2.jpeg "Robot Assembled with top plate")
 
-![Robot Photo](/images/antweight/antweight-photo.jpeg "Robot photoshoot! Credit to Nick Hom.")
+![Robot Photo](/images/antweight/antweight-photo.jpg "Robot photoshoot! Credit to Nick Hom.")
 
 Below is a picture after its debut competition. The robot performed surprisingly well and the main point of failure was my poor driving and low-quality drive motors. You can see the chips out of the PETG drum weapon and out of the PLA wedges. I went through two PETG drums as the first one split in half. It is truly amazing to see the power stored in these robot as another competitor's impact chipped large chunks out of my PETG drum, independent of any layer lines or geometry of the part. The damage is pure shearing of the material.
 ![Post-Comp Picture](/images/antweight/ant-post-comp.jpg "Thats a lot of damage!")
