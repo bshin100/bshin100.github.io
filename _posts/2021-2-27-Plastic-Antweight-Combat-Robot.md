@@ -37,4 +37,4 @@ Below is a picture after its debut competition. The robot performed surprisingly
 In the future, I plan to strengthen the areas that damaged easily and reoptimize the tooth geometry of the drum spinner to impart more damage and reduce chipping. Another fun tip I learned was to reheat the printed parts with a heat gun to improve the fusion between layers in the plastic, leading to increased strength.
 
 
-**Total Cost:** $15-20, most cost subsidized by WPI
+**Total Cost:** ~$100, most cost subsidized by WPI
