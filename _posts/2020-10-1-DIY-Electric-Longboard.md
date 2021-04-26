@@ -9,7 +9,7 @@ featured_img: /images/EBoard/EBoard-Thumb.jpeg
 
 ### Time frame: August, 2019
 
-[See the imgur gallery here.](https://imgur.com/a/yb3TD5j)
+[<blockquote class="imgur-embed-pub" lang="en" data-id="a/yb3TD5j"  ><a href="//imgur.com/a/yb3TD5j">DIY Electric Longboard</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>]
 
 Seeing videos of people riding both commercial and DIY electric longboards and efficiently traveling small distances (like on a college campus), I was inspired to create my own electric longboard. While I had minimal normal longboarding (or skating) experience, I thought this would be a fun project to challenge myself and stimulate my passion for creation. After doing about a month of research on commercial boards and off-the-shelf components, I decided to pull the trigger on a DIY one.
 
