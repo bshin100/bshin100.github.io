@@ -9,7 +9,7 @@ featured_img: /images/antweight/antweight-photo.jpg
 
 ### Time frame: December, 2020 - February, 2021
 
-Taking my intro from my [Beetleweight](/Beetleweight-Combat-Robot/) combat robot since it's the same concept:
+Taking my intro from my [Beetleweight]({% post_url 2020-10-4-Beetleweight-Combat-Robot %}) combat robot since it's the same concept:
 Ever seen BattleBots the TV show before? If not, it's essentially lots of 250-lb remote-operated robots that destructively battle in a contained box with high-power spinners, drums, or flippers. It's hard to describe in text, so I would recommend looking up a [quick clip online.](https://youtu.be/diOJz6U6MEA?t=26) The power stored in these weapons are unfathomable. These cost upwards of a luxury vehicle and more.
 
 This project is similar to those robots but on a much smaller (and cheaper) scale. I decided to do this under the guidance and funding of the combat robotics club at WPI. This is the second combat robot that I have designed, but on a smaller scale than the first. This is for learning and fun as well as to also participate in my friend's Interactive Qualifying Project at WPI. 
