@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Plastic Antweight Combat Robot
-featured_img: /images/antweight/antweight-photo.png
+featured_img: /images/antweight/antweight-photo.jpg
 published: true
 ---
 
