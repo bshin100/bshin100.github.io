@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Plastic Antweight Combat Robot
-featured_img: /images/antweight/antweight-photo.jpg
 published: true
+featured_img: /images/antweight/antweight-photo.jpg
 ---
 
 > A custom-engineered 3D printed combat robot less than 1lb.

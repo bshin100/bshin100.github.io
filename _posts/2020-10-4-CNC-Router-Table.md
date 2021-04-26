@@ -2,7 +2,7 @@
 layout: post
 title: CNC Router Table
 published: true
-featured_img: /images/antweight/antweight-photo.png
+featured_img: /images/MPCNC/cnc-more.jpeg
 ---
 
 > Precision computer-controlled router capable of milling wood, plastic, & aluminum.
@@ -36,7 +36,7 @@ There was a slight pause in the project as I had to return to college. More to c
 It's finished! I certainly could've banged this out by the end of the summer, however I enjoyed taking my time with this build (and spending some much needed time with the friends and family I couldn't see during lock-down) as it has allowed me to think everything through in every step of the process.
 
 ![CNC Assembly](/images/MPCNC/cnc-more.jpeg "CNC almost assembled!")
-CNC almost assembled! Just to mount the stepper motors, belts, pulleys, and wiring.
+CNC almost assembled! Just need to mount the stepper motors, belts, pulleys, and wiring.
 
 ![CNC Done](/images/MPCNC/cnc-wires.jpeg "CNC wiring, with tape measure trick")
 Some wire management, using a cheap tape measure to give some rigidity to the cable harness. For protection and a cleaner look, I wrapped all the wires in nylon cable sleeving. I also opted to use a different "spindle" than what was recommended from the plans - my Makita compact router is more powerful and has variable speed control, which makes my machine more robust.

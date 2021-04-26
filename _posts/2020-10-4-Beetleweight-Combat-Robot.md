@@ -2,7 +2,7 @@
 layout: post
 title: Beetleweight Combat Robot
 published: true
-featured_img: /images/antweight/antweight-photo.png
+featured_img: /images/beetle-model.PNG
 ---
 
 > Custom engineered and fabricated combat robot constrained under 3lbs.
