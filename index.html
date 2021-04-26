@@ -11,6 +11,7 @@ published: true
       
       <div class="entry">
         {{ post.excerpt }}
+        <img src="{% post.feature_img %}" alt="Thumbnail" style="width: 75%">
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
