@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Beetleweight Combat Robot
+published: true
+featured_img: /images/antweight/antweight-photo.png
 ---
 
 > Custom engineered and fabricated combat robot constrained under 3lbs.
@@ -22,8 +24,3 @@ The aluminum front panel milled:
 ![Milled Aluminum Front Panel](/images/beetle-front-panel.JPG "Milled Aluminum Front Panel")
 
 **Total Cost:** roughly $500, so far.
-
-
-
-
-
