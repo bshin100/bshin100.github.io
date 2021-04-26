@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LED Light Tiles
+published: true
 ---
 
 > Custom 3D printed light tiles using programmable WS2812B LEDs, inspired by nanoleaf.
