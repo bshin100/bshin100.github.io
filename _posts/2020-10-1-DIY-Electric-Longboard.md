@@ -1,6 +1,8 @@
 ---
 layout: post
 title: DIY Electric Longboard
+published: true
+featured_img: /images/antweight/antweight-photo.png
 ---
 
 > A DIY electric longboard with 3200+ Watts of power capable of about 15 miles range and 32+ mph speed.
@@ -20,4 +22,3 @@ Initially, both the enclosures for the electronics and the battery were 3D print
 This project is certainly one of my largest and most fun ones. It is also a convenient method of getting around short distances at home or on campus. While it is technically complete, there are always new ideas on improving it. My latest upgrades/upgrades-in-progress are flashlight mounts for night riding visibility.
 
 **Total Cost:** $1000+
-
