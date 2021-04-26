@@ -1,6 +1,8 @@
 ---
 layout: post
 title: CNC Router Table
+published: true
+featured_img: /images/antweight/antweight-photo.png
 ---
 
 > Precision computer-controlled router capable of milling wood, plastic, & aluminum.
@@ -42,4 +44,3 @@ Some wire management, using a cheap tape measure to give some rigidity to the ca
 The choice of firmware to run on the mainboard to control the CNC router was Marlin. While Marlin is not typically used for CNC machines (it's predominantly used for 3D printing), it has features that allow it to work, and I was familiar with it since it's the same firmware on my 3D printer. The other alternative was GRBL, which I may try in the future to see the features it has that Marlin does not. I pulled the latest bugfix version of Marlin from the official GitHub, and tweaked the configuration files. With my particular control board, the BTT SKR V1.4 Turbo, flashing firmware was as easy as compiling it onto a microSD card and then powering up the mainboard.
 
 **Total Cost:** $600+
-
