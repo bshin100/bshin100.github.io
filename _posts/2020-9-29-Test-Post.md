@@ -2,7 +2,7 @@
 layout: post
 title: Up and running!
 published: true
-featured_img: /images/antweight/antweight-photo.png
+featured_img: /images/jekyll-logo.png
 ---
 
 Test post using the Jekyll Now framework! Please disregard.
