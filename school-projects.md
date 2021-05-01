@@ -23,7 +23,7 @@ The slideshow presentation below captures the full design process of the robot.
 .responsive-wrap iframe{ max-width: 100%; }
 </style>
 <div class="responsive-wrap">
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuqkrqgHnaUKPj7Nj8om_M2t6Hrm84zkQjdVVGm78jK8rpApAu7_MXZTGLBWM-ysl-mORRF79EXyAl/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuqkrqgHnaUKPj7Nj8om_M2t6Hrm84zkQjdVVGm78jK8rpApAu7_MXZTGLBWM-ysl-mORRF79EXyAl/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">t</iframe>
 <div>
 
 #### Programming
