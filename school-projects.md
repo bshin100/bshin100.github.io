@@ -23,9 +23,10 @@ The slideshow presentation below captures the full design process of the robot.
 .responsive-wrap iframe{ max-width: 100%; }
 </style>
 <div class="responsive-wrap">
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuqkrqgHnaUKPj7Nj8om_M2t6Hrm84zkQjdVVGm78jK8rpApAu7_MXZTGLBWM-ysl-mORRF79EXyAl/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">t</iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuqkrqgHnaUKPj7Nj8om_M2t6Hrm84zkQjdVVGm78jK8rpApAu7_MXZTGLBWM-ysl-mORRF79EXyAl/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <div>
 
+<div markdown="1">
 #### Programming
 The control of this robot was based in C++ for the Pololu 32U4 control board which was Arduino compatible. The program design for the robot was centered around a state machine and the concepts of object-oriented programming. This non-blocking mechanism allowed for discrete control over the various "states" that the robot was in depending on the intended functionality/operation. It also allowed for "parallel processes" to occur within the program such as moving the robot while also reading from a sensor while checking for the user IR signal for an emergency stop. This is covered in slide 22 of the presentation but is shown again below.
 
@@ -44,3 +45,5 @@ See the full code on [GitHub.](https://github.com/bshin100/RBE2001_Final_Code)
 
 #### Conclusion
 Overall, this project was a success. Our robot deliverable was packaged cleanly and neatly, with objectively the most robust design and construction. Much of the mechanical design was above-and-beyond using prior experience, such as keeping a low center-of-mass on the robot to increase stability and compressing the axles on the linkages for increased rigidity. In testing and final demonstrations, we were able to accomplish all of the established objectives along with some bonus objectives like manipulating a heavier aluminum plate.
+
+</div>
