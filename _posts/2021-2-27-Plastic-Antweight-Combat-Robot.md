@@ -41,6 +41,7 @@ Below is a picture after its debut competition. The robot performed surprisingly
 In the future, I plan to strengthen the areas that damaged easily and reoptimize the tooth geometry of the drum spinner to impart more damage and reduce chipping. Another fun tip I learned was to reheat the printed parts with a heat gun to improve the fusion between layers in the plastic, leading to increased strength.
 
 **Update April 2021**
+
 To spice things up, my friends running the competitions have altered the rules to allow for machined ABS and UPVC materials on our robots! These materials are significantly stronger than that of most 3D printed parts, so they are perfect for essential supports or weapons. I chose to make my drum out of UPVC and I machined it on one of the school's mills. The new optimized geometry of the teeth on this drum are more flat (as opposed to curves) and have an inward rake angle so that it has more surface area for impact (and will not dull as fast), yet still be able to "pull" things in.
 
 Here is a profile of the new drum design - the enclosed curves on the teeth are vestiges of the old design for reference:
