@@ -34,6 +34,25 @@ The control of this robot was based in C++ for the Pololu 32U4 control board whi
 
 One of the biggest challenges for the code was the non-blocking feature, since the state machine method was continuously looped in the program. As such, there could not be any arbitrary delays and every "piece" of the various actuator or sensor control functions needed to be optimized to work in such a structure. For example, the functions controlling the four-bar linkage motors needed to have setpoints that didn't simply wait for it to finish *within* the implementation of the function, rather the completion would be checked externally in the respective state of the state machine such that it would be non-blocking.
 
+The code below demonstrates a typical implementation of a state in the state machine utilizing non-blocking code to advance through its functions.
+```cpp
+case DRIVE_REV_LIFT_1:
+    // Line follow and drive in reverse until intersection, also raise arm to 25 deg roof height
+    if(rangeFinder.getDistance() >= DIST_PLATFORM-0.3) {
+        Serial.println("Chassis target reached.");
+        chassis.drive(0);
+    }
+    blueMotor.startMoveTo(LIFTER_25ROOF * GEAR_RATIO_LIFTER);
+    blueMotor.loopController();
+    if (blueMotor.pullOnTarget()) {
+        Serial.println("Lifter arm movement complete");
+        blueMotor.setEffort(0);
+        state = TURN_RIGHT_1;
+        chassis.startTurn(84);
+    }
+break;
+```
+
 Aside from that, the next biggest challenge was the difference between embedded microcontroller programming for a robot and pure computer science. This distinction is one that I was familiar with but always have room to grow. A computer program will do what you ask - the only real source of error is the programmer. In contrast, programming a robot entails a variety of places that things can go wrong in, such as user error, sensor error, electrical problems, mechanical problems, environmental factors (i.e., friction), and so much more. This makes for an exponentially longer troubleshooting process and requires much more careful planning and design.
 
 The code took several dozens of hours to develop and is complex. I cannot possibly detail on all the features and functionality here. In summary, some of the concepts that were implemented were:
