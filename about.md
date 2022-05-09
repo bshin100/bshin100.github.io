@@ -12,7 +12,9 @@ I've been passionate about creating and tinkering from a young age and in my fre
 One of my skillsets that have evolved from my hobbies is additive manufacturing. I purchased a 3D printer almost three years ago after a month of research and it has been one of my most valuable investments. While there is not a *ton* of tangible things to show for this, I have put in hundreds of hours learning, troubleshooting, and experimenting with the ins-and-outs of my printer and other printers. With that, I am well experienced in Fused Deposition Modeling (FDM) 3D printing and a huge proponent of iterative design. I would love to learn more on more advanced methodologies, like SLS, SLA, or DMLS.
 
 Some of my other skills include: 
-- Computer and microprocessor programming (Java, C, C++, Arduino, Python, Javascript)
+- Computer and microprocessor programming (Java, C, C++, Arduino, Python, Javascript, MATLAB, ROS)
+    - Embedded programming
+    - Full-stack application development
 - Computer-aided design (CAD) with Autodesk Inventor and Solidworks
 - Basic soldering and wiring
 - Workshop tools and equipment
