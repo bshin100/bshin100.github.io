@@ -1,7 +1,7 @@
 ---
 layout: page
 title: School Project Highlights
-permalink: /school/
+permalink: /school-projects/
 published: true
 ---
 
