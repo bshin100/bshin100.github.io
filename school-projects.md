@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_school
 title: School Project Highlights
 permalink: /school-projects/
 published: true
@@ -16,16 +16,3 @@ Hi! I'm currently an engineering student at Worcester Polytechnic Institute with
 - More to come!
 
 ----
-<div markdown="0">
-    <div class="school-projects">
-      {% for post in site.tags.SCHOOL %}
-        <article class="post">
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-          <div class="entry">
-            {{ post.excerpt }}
-          </div>
-          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-        </article>
-      {% endfor %}
-    </div>
-</div>
