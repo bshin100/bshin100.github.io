@@ -8,6 +8,10 @@ Hi! I'm currently an engineering student at Worcester Polytechnic Institute with
 
 **Contents:**
 - RBE 2001 - Unified Robotics I Final Project
+- RBE 2002 - Unified Robotics II Final Project
+- RBE 3001 - Unified Robotics III Final Project
+- RBE 3002 - Unified Robotics IV Final Project
+- CS 3733 - Software Engineering Final Project
 - More to come!
 
 ----
@@ -69,8 +73,6 @@ See the full code on [GitHub.](https://github.com/bshin100/RBE2001_Final_Code)
 #### Conclusion
 Overall, this project was a success. Our robot deliverable was packaged cleanly and neatly, with objectively the most robust design and construction. Much of the mechanical design was above-and-beyond using prior experience, such as keeping a low center-of-mass on the robot to increase stability and compressing the axles on the linkages for increased rigidity. In testing and final demonstrations, we were able to accomplish all of the established objectives along with some bonus objectives like manipulating a heavier aluminum plate.
 
-</div>
-
 ----
 ## RBE 2002 - Unified Robotics II Final Project
 
@@ -82,3 +84,5 @@ Overall, this project was a success. Our robot deliverable was packaged cleanly 
 
 ----
 ## CS 3733 - Software Engineering Final Project
+  
+</div>
