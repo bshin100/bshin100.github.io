@@ -16,3 +16,7 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     {% endif %}
+
+    {% unless page.image %}
+    <meta property="og:image" content="/images/beetleweight/beetle-complete.jpg" />
+    {% endunless %}
