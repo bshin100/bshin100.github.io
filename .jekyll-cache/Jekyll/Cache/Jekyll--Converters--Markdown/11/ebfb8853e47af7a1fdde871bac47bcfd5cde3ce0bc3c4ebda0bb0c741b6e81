@@ -1,0 +1,40 @@
+I"^<h4 id="introduction">Introduction</h4>
+<p><strong>Course objectives:</strong>
+Second of a four-course sequence introducing foundational theory and practice of robotics engineering from the fields of computer science, electrical engineering and mechanical engineering. The focus of this course is interaction with the environment through sensors, feedback and decision processes. Concepts of stress and strain as related to sensing of force, and principles of operation and interface methods for electronic transducers of strain, light, proximity and angle will be presented. Basic feedback mechanisms for mechanical systems will be implemented via electronic circuits and software mechanisms. The necessary software concepts will be introduced for modular design and implementation of decision algorithms and finite state machines.</p>
+
+<!-- excerpt-start -->
+<p><strong>Project objectives:</strong>
+Program a robot to autonomously navigate an “obstacle course” consisting of a small ramp tucked into a corner of a room while balancing an object such as a water bottle or cup atop the robot. This project differed from the previous course as it focused more on software as opposed to hardware. The robot was based a Pololu Romi Chassis kit with the Pololu 32U4 control board. The operation of the robot was to be entirely autonomous with the help of a suite of sensors, including Hall-effect encoders, IR reflectance sensors, and ultrasonic distance sensors. An additional challenge to the project was to be the fastest team to traverse the course.
+<!-- excerpt-end --></p>
+
+<p>The path for the robot to follow is shown below. The given procedure to acheive this navigation were to:</p>
+<ol>
+  <li>Load object onto the robot and press button on the robot to start;</li>
+  <li>After one second, move straight until the robot collides with the wall, then stop;</li>
+  <li>Remove object from robot, place another object onto the robot, press button on robot;</li>
+  <li>Rotate 90 degrees, follow wall around the corner;</li>
+  <li>Traverse the ramp, then continue to follow the wall for another 10 cm;</li>
+  <li>Stop, and remove object from robot (if it is still on there).</li>
+</ol>
+
+<p><img src="/images/School/RBE2002/course.png" alt="Obstacle Course" title="The course for the robot to complete" /></p>
+
+<h4 id="programming">Programming</h4>
+<p>The control of this robot was based in C++ for the Pololu 32U4 control board which was Arduino compatible. The program design for the robot was centered around a state machine and the concepts of object-oriented programming. The several distinct steps of the procedure split well into a finite state machine, consisting of the states: idle, driving to wall, waiting for a button press, and wall following. While the overall objective of the project seems relatively simple, the challenge was in the implementation. One could easily “dead reckon” the robot (e.g., programming it to move in a sequence of hard-coded distances and turns); however, that sort of approach is often problematic and does not address the issue of balancing objects on the robot.</p>
+
+<p>The major elements of the robot program were:</p>
+<ul>
+  <li>A PID controller to drive parallel to a wall using input from the distance sensors,</li>
+  <li>Integration with the onboard IMU (gyroscope and accelerometer),</li>
+  <li>A median filter to remove noise from sensor data,</li>
+  <li>Encoder-based odometry to track robot pose,</li>
+  <li>and most importantly, acceleration control to balance objects.</li>
+</ul>
+
+<p>The acceleration control algorithms in the code were integral to the success of this project. All other elements were relatively easy to implement, as by now, my team and I were already well-experienced in robotics programming. Maintaining the balance of the object atop the robot during the obstacle course, namely the intentional collision with a wall and traversing a ramp, required precise control over the acceleration of the robot. If it moves too abruptly, then the object will fall off. Further, the instance of coming off the end of the ramp needed to be distinctly detected such that it could trigger the next sequence of driving straight along the wall for exactly 10 cm.</p>
+
+<p>See the full code on <a href="https://github.com/ThePandaJedi/RBE_2002-Team_10">GitHub.</a></p>
+
+<h4 id="conclusion">Conclusion</h4>
+<p>This project was enjoyable and offered a different perspective on robotics programming than what was seen in the previous courses. This was also completed during the midst of the COVID-19 pandemic and the project was appropriately designed by our professor to account for this, all while still demonstrating the learning objectives of the course. The project was a success and our team had the extra time to implement certain bonus features for extra credit. If my memory serves me right, my team was among the fastest to complete the obstacle course without the object falling off.</p>
+:ET

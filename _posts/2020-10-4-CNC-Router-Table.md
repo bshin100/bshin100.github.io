@@ -7,6 +7,7 @@ featured_img: /images/MPCNC/cnc-more.jpeg
 
 > Precision computer-controlled router capable of milling wood, plastic, & aluminum.
 
+<!-- excerpt-end -->
 ### Time frame: June, 2020 - Present
 
 After a few years' experience with a commercial CNC router in my high school robotics shop (a Laguna for those know!), and some more with the vast array of Haas CNC mills at my university, I decided to challenge myself in building a precise and cost-effective CNC router during quarantine 2020.

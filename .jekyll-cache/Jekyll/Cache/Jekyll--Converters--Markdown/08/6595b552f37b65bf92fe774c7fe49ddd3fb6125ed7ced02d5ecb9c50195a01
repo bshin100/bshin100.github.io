@@ -1,0 +1,25 @@
+I"�<h4 id="introduction">Introduction</h4>
+<p><strong>Course objectives:</strong>
+Third of a four-course sequence introducing foundational theory and practice of robotics engineering from the fields of computer science, electrical engineering and mechanical engineering. The focus of this course is actuator design, embedded computing and complex response processes. Concepts of dynamic response as relates to vibration and motion planning will be presented. The principles of operation and interface methods various actuators will be discussed, including pneumatic, magnetic, piezoelectric, linear, stepper, etc. Complex feedback mechanisms will be implemented using software executing in an embedded system. The necessary concepts for real-time processor programming, re-entrant code and interrupt signaling will be introduced.</p>
+
+<!-- excerpt-start -->
+<p><strong>Project objectives:</strong>
+Understand and control a <a href="https://github.com/Hephaestus-Arm/HephaestusArm2">3-DOF robotic arm</a> to manipulate colored balls. The final outcome was to be a pick and place system for four distictly colored balls using computer vision and principles of robotics learned in this course, such as: forward kinematics, inverse kinematics, velocity kinematics, and trajectory generation. The robotic arm in previous years, was to be assembled by the students at the beginning of the course; however, during this particular instance of the course, it was provided pre-assembled by the TAs.
+<!-- excerpt-end --></p>
+
+<h4 id="programming">Programming</h4>
+<p>Interestingly enough, the development environment for this project was based in MATLAB as opposed to Arduino in previous courses. Object-oriented programming and MATLAB (a functional language) didn’t really seem to go together, but it worked great in this application. MATLAB handles all variables as matrices, which made the control algorithms much easier to implement as opposed to any other language I’ve worked in. Much of the kinematic calculations involve matrix math and manipulation, and MATLAB handled it very efficiently and conveniently. The robot was based on an ItsyBitsy 32U4 controller running firmware derived from Adafruit’s TinyUSB stack, and the MATLAB code communicated with this controller through data packets. Feel free to read more about the communication protocol <a href="https://github.com/Hephaestus-Arm/HephaestusArm2/blob/main/protocol.md">here</a>.</p>
+
+<p>The MATLAB code was the culmination of five labs and seven weeks of hard work that ultimately led to the final product. At first, the entire project seemed extremely daunting. We needed to figure out how to accurately move the robot arm to a given position, detect colored balls on a checkerboard, and then pick up and sort those balls with the arm. Once the kinematics math was figured out and implemented, the main challenges involved trajectory generation and of course, the computer vision system. Luckily, MATLAB has a few handy tools and libraries that made the computer vision system easier to implement as opposed to from scratch. A 2.0-megapixel wide-angle camera was mounted on a fixed post adjacent from the robot arm and was used for this system. After developing and fine-tuning the object detection and localization, we could finally connect the pieces together. Once an colored ball is detected, the system finds its centroid and localizes this position with respect to the robot’s base frame of reference. Then the arm can be commanded to move the end-effector to that position to pick up the ball.</p>
+
+<p>See the full code on <a href="https://github.com/bshin100/RBE3001_Team18_Code">GitHub.</a></p>
+
+<p>I’ve already created a <a href="https://docs.google.com/document/d/e/2PACX-1vQHKykvX6u-CRCa7uCK8z0v9jJAucZbd0tpX7u06t4mihpYDuXbGYWKSehEkUsPZA/pub">write-up of the project,</a> where you can find more details about the code and math developed in this project. Below is also an embedded version of the final report.</p>
+
+<div style="text-align: center;"><iframe src="https://docs.google.com/document/d/e/2PACX-1vQHKykvX6u-CRCa7uCK8z0v9jJAucZbd0tpX7u06t4mihpYDuXbGYWKSehEkUsPZA/pub?embedded=true" width="100%" height="360"></iframe></div>
+
+<h4 id="conclusion">Conclusion</h4>
+<p>This project turned out to be successful, although my team and I were not able to develop any of the bonus features such as dynamic vision tracking due to time constraints. This was one of my favorite projects at WPI as it taught me extremely useful robotics concepts that I had not been exposed to before, and provided me with the experience and knowledge to further work with industrial robots and anything with joints. You can see the final demonstration video here:</p>
+
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/n6jruPJ5bFY?start=137" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+:ET

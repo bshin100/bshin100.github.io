@@ -77,15 +77,39 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
 
 # Exclude these files from your production _site
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - CNAME
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      excerpt_start: "<!-- excerpt-start -->"
+      excerpt_separator: "<!-- excerpt-end -->"
+  -
+    scope:
+      path: "school/"
+    values:
+      tag: "school"
+
+#page_excerpts: true
+

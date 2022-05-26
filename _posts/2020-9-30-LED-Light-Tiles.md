@@ -7,6 +7,7 @@ featured_img: /images/moodlite-still.jpg
 
 > Custom 3D printed light tiles using programmable WS2812B LEDs, inspired by nanoleaf.
 
+<!-- excerpt-end -->
 ### Time frame: January, 2019 - October, 2020
 
 ![Finished product.](/images/moodlite.gif "Finished Product.")

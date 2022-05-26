@@ -7,6 +7,7 @@ featured_img: /images/antweight/antweight-photo.jpg
 
 > A custom-engineered 3D printed combat robot less than 1lb.
 
+<!-- excerpt-end -->
 ### Time frame: December, 2020 - February, 2021
 
 #### Introduction

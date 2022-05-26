@@ -7,6 +7,7 @@ featured_img: /images/beetleweight/beetle-complete.jpg
 
 > Custom engineered and fabricated combat robot constrained under 3lbs.
 
+<!-- excerpt-end -->
 ### Time frame: November, 2019 - July, 2021
 
 #### Introduction

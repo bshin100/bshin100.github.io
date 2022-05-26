@@ -11,20 +11,20 @@ layout: default
   </div>
 
   <div class="school_posts">
-	  {% for post in site.pages %}
-		  {% if post.tag == "school" %}
-			    <article class="post">
+  	  {% assign schoolPosts = site.pages | where: "tag","school" %}
+	  {% for post in schoolPosts %}
+	    <article class="post">
 
-			      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-			      <div class="entry">
-			        {{ post.content | markdownify | truncatewords: 50 }}
-			        <!-- {{ post.excerpt }} -->
-			      </div>
+	      <div class="entry">
+	        {% assign excerptParts = post.content | split: post.excerpt_separator %}
+	        {% assign excerptInner = excerptParts[0] | split: post.excerpt_start %}
+			{{ excerptInner[1] | markdownify | truncatewords: 50 }}
+	      </div>
 
-			      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-			    </article>
-		   {% endif %}
+	      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	    </article>
 	  {% endfor %}
   </div>
 

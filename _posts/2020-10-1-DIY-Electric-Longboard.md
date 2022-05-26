@@ -7,11 +7,12 @@ featured_img: /images/EBoard/EBoard-Thumb.jpeg
 
 > A DIY electric longboard with 3200+ Watts of power capable of about 15 miles range and 32+ mph speed.
 
+<!-- excerpt-end -->
 ### Time frame: August, 2019
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/yb3TD5j"  ><a href="//imgur.com/a/yb3TD5j">DIY Electric Longboard</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
 Seeing videos of people riding both commercial and DIY electric longboards and efficiently traveling small distances (like on a college campus), I was inspired to create my own electric longboard. While I had minimal normal longboarding (or skating) experience, I thought this would be a fun project to challenge myself and stimulate my passion for creation. After doing about a month of research on commercial boards and off-the-shelf components, I decided to pull the trigger on a DIY one.
+
+<div style="text-align: center;"><blockquote class="imgur-embed-pub" lang="en" data-id="a/yb3TD5j"><a href="//imgur.com/a/yb3TD5j">DIY Electric Longboard</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
 
 There are a few basic components of an electric longboard: the longboard deck, trucks, wheels, motors, motor mounts, battery, and an electronic speed controller (ESC). There are also a handful of hardware components as well.
 
