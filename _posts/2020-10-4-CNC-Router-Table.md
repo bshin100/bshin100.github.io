@@ -31,11 +31,9 @@ During these curves, I would notice my printer "stuttering" and moving extremely
 #### Assembly
 After 240+ hours of printing (not including failed prints) I was ready to assemble. I had previously cut all of the steel conduit to length while waiting for the prints. First, I needed a table for this CNC to go on. I put together a simple and rigid work table from 2" x 4" lumber and a sheet of MDF on top to act as the work surface and spoilboard. Sheet goods (4' x 8') are always hard for me to acquire as I do not have a truck, and need to get them cut in half at my local home improvement store before they can fit in my car. I had the opportunity to use my new jobsite table saw to further size the sheets of MDF. Once mounted, I also partially cut two lines a few inches away from the edge, so the middle section is replaceable when it inevitably gets mangled, and I don't have to disassemble my CNC machine.
 
-Here's the table with part of the CNC mounted:
-
-{:refdef: style="text-align: center;"}
-![CNC Partial](/images/MPCNC/cnc-partial.jpeg "Table with beginning assembly"){: style="width: 50%;"}
-{: refdef}
+{% include image.html img="/images/MPCNC/cnc-partial.jpeg" width="50%"
+    title="Table with beginning assembly"
+    caption="Table with part of the CNC mounted." %}
 
 There was a slight pause in the project as I had to return to college. More to come!
 
@@ -44,12 +42,15 @@ There was a slight pause in the project as I had to return to college. More to c
 ### Update Winter 2020-2021
 It's finished! I certainly could've banged this out by the end of the summer, however I enjoyed taking my time with this build (and spending some much needed time with the friends and family I couldn't see during lock-down) as it has allowed me to think everything through in every step of the process.
 
-| ![CNC Assembly](/images/MPCNC/cnc-more.jpeg "CNC almost assembled!") |
-|:--:|
-| *CNC almost assembled! Just need to mount the stepper motors, belts, pulleys, and wiring.* |
+{% include image.html img="/images/MPCNC/cnc-more.jpeg"
+    title="CNC almost assembled!"
+    caption="CNC almost assembled! Just need to mount the stepper motors, belts, pulleys, and wiring." %}
 
-![CNC Done](/images/MPCNC/cnc-wires.jpeg "CNC wiring, with tape measure trick")
-Some wire management, using a cheap tape measure to give some rigidity to the cable harness. For protection and a cleaner look, I wrapped all the wires in nylon cable sleeving. I also opted to use a different "spindle" than what was recommended from the plans - my Makita compact router is more powerful and has variable speed control, which makes my machine more robust.
+{% include image.html img="/images/MPCNC/cnc-wires.jpeg"
+    title="CNC wiring, with tape measure trick"
+    caption="Some wire management, using a cheap tape measure to give some rigidity to the cable harness." %}
+
+For protection and a cleaner look, I wrapped all the wires in nylon cable sleeving. I also opted to use a different "spindle" than what was recommended from the plans - my Makita compact router is more powerful and has variable speed control, which makes my machine more robust.
 
 #### Control
 The choice of firmware to run on the mainboard to control the CNC router was [Marlin](https://marlinfw.org/). While Marlin is not typically used for CNC machines (it's predominantly used for 3D printing), it has features that allow it to work, and I was familiar with it since it's the same firmware on my 3D printer. The other alternative was Grbl, which I may try in the future to see the features it has that Marlin does not. I pulled the latest bugfix version of Marlin from the official GitHub, and tweaked the configuration files. With my particular control board, the BTT SKR V1.4 Turbo, flashing firmware was as easy as compiling it onto a microSD card and then powering up the mainboard. An advantage of running Marlin on this machine is the versatility - it can support many different tools other than a router/spindle, such as lasers, 3D printing hardware, or a drag knife.

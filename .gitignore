@@ -5,6 +5,7 @@ package.json
 _site/
 *-cache/
 .jekyll
+.jekyll-cache/
 .jekyll-metadata
 
 # Ruby

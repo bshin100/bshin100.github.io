@@ -111,9 +111,19 @@ img {
 }
 
 // Captions
-img + em {
-  font-style: italic;
-  font: 14px/1.2 $helvetica;
+//img + em {
+//  font-style: normal;
+//  font: 14px/1.2 $helvetica;
+//}
+
+.image-wrapper {
+    text-align: center;
+
+    .image-caption {
+        color: $gray;
+        font: 16px/1.2 $helvetica;
+        margin-top: 5px;
+    }
 }
 
 // Fixes images in popup boxes from Google Translate
