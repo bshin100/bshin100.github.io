@@ -110,6 +110,12 @@ img {
   max-width: 100%;
 }
 
+// Captions
+img + em {
+  font-style: italic;
+  font: 14px/1.2 $helvetica;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;

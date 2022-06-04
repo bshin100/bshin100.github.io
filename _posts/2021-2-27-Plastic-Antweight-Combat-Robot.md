@@ -20,6 +20,7 @@ The "Antweight" class of combat robotics typically has a few basic rules and con
 
 #### Design
 I designed the robot to be a drum spinner - where a drum with a few impactors ("teeth") spins to inflict damage. Here is the design in Solidworks: 
+
 ![Solidworks Render](/images/antweight/antweight-render.jpg "Solidworks Render")
 The entirety of the chassis is 3D printed, with a main body and modular components. I have been improving on my design for additive manufacturing - there is an entire set of factors to keep in mind while designing such as large tolerances, part/layer orientation, and mechanical design rules such as compression on axles and intentional shear points - just to name a few. Considering and carefully designing the parts with respect to these factors makes for a robust and optimized project. I may have mentioned this in my previous posts, but I'd like to place more emphasis on the layer orientation. For a 3D printed part, it will always have more strength parallel to its layers as opposed to perpendicular. With this in mind, the most critical modules are the ones that hold the axle for the drum spinner. These "rails" are constrained in several ways and when assembled, they are surprisingly rigid. 
 
@@ -29,15 +30,16 @@ The weight analysis in the CAD drawings yielded 0.95 lbs or 15.2 ounces - just b
 
 #### Assembly
 Here is the robot assembled (I had not put on the foam wheels until after the first two pictures were taken):
-![Robot Assembled 1](/images/antweight/ant-assembled-1.jpeg "Robot Assembled, no top plate")
 
-![Robot Assembled 2](/images/antweight/ant-assembled-2.jpeg "Robot Assembled with top plate")
+![Robot Assembled 1](/images/antweight/ant-assembled-1.jpeg "Robot Assembled, no top plate"){: style="float: left; width: 44.7%; padding: 10px"}
+
+![Robot Assembled 2](/images/antweight/ant-assembled-2.jpeg "Robot Assembled with top plate"){: style="float: right; width: 50%; padding: 10px"}
 
 ![Robot Photo](/images/antweight/antweight-photo.jpg "Robot photoshoot! Credit to Nick Hom.")
 
 #### Competition(s)
 Below is a picture after its debut competition. The robot performed surprisingly well and the main point of failure was my poor driving and low-quality drive motors. You can see the chips out of the PETG drum weapon and out of the PLA wedges. I went through two PETG drums as the first one split in half. It is truly amazing to see the power stored in these robot as another competitor's impact chipped large chunks out of my PETG drum, independent of any layer lines or geometry of the part. The damage is pure shearing of the material.
-![Post-Comp Picture](/images/antweight/ant-post-comp.jpg "Thats a lot of damage!")
+![Post-Comp Picture](/images/antweight/ant-post-comp.jpg "That's a lot of damage!"){: style="float: right; width: 40%; padding: 15px"}
 
 In the future, I plan to strengthen the areas that damaged easily and reoptimize the tooth geometry of the drum spinner to impart more damage and reduce chipping. Another fun tip I learned was to reheat the printed parts with a heat gun to improve the fusion between layers in the plastic, leading to increased strength.
 

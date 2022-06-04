@@ -24,7 +24,7 @@ Here's what the CNC Router will look similar to:
 #### 3D Printing
 I purchased the components individually (self-sourced) earlier in June and began 3D printing the parts. The dimensional accuracy and structural integrity of these printed parts are pretty important to having a precise machine. I encountered some difficulty with under-extrusion on my 3D printer, which was frustrating since I had about a year of problem-free printing prior to this project. I managed to get all of the parts printed in PLA, using a little over 1.5 kg. Oddly enough, I encountered another 3D printing issue regarding the smoothness of the curved surfaces:
 
-![Bumpy 3D Prints](/images/MPCNC/print-artifacts.jpg "Top: SD Card Print; Bottom: Octoprint")
+![Bumpy 3D Prints](/images/MPCNC/print-artifacts.jpg "Top: SD Card Print; Bottom: Octoprint"){: style="float: right; width: 40%; padding: 15px"}
 
 During these curves, I would notice my printer "stuttering" and moving extremely slowly over the area, which was uncharacteristic of the printer. I looked into this issue for a little bit - it turned out to be related to the way [Octoprint](https://octoprint.org/) interfaces with the 3D printer's mainboard in sending the serial data. I suppose the G-Code for the curves tend to overload the serial buffer thus the stuttering. This issue was solved by printing with the traditional method of using a microSD card straight into the mainboard.
 
@@ -32,7 +32,10 @@ During these curves, I would notice my printer "stuttering" and moving extremely
 After 240+ hours of printing (not including failed prints) I was ready to assemble. I had previously cut all of the steel conduit to length while waiting for the prints. First, I needed a table for this CNC to go on. I put together a simple and rigid work table from 2" x 4" lumber and a sheet of MDF on top to act as the work surface and spoilboard. Sheet goods (4' x 8') are always hard for me to acquire as I do not have a truck, and need to get them cut in half at my local home improvement store before they can fit in my car. I had the opportunity to use my new jobsite table saw to further size the sheets of MDF. Once mounted, I also partially cut two lines a few inches away from the edge, so the middle section is replaceable when it inevitably gets mangled, and I don't have to disassemble my CNC machine.
 
 Here's the table with part of the CNC mounted:
-![CNC Partial](/images/MPCNC/cnc-partial.jpeg "Table with beginning assembly")
+
+{:refdef: style="text-align: center;"}
+![CNC Partial](/images/MPCNC/cnc-partial.jpeg "Table with beginning assembly"){: style="width: 50%;"}
+{: refdef}
 
 There was a slight pause in the project as I had to return to college. More to come!
 
@@ -41,8 +44,9 @@ There was a slight pause in the project as I had to return to college. More to c
 ### Update Winter 2020-2021
 It's finished! I certainly could've banged this out by the end of the summer, however I enjoyed taking my time with this build (and spending some much needed time with the friends and family I couldn't see during lock-down) as it has allowed me to think everything through in every step of the process.
 
-![CNC Assembly](/images/MPCNC/cnc-more.jpeg "CNC almost assembled!")
-CNC almost assembled! Just need to mount the stepper motors, belts, pulleys, and wiring.
+| ![CNC Assembly](/images/MPCNC/cnc-more.jpeg "CNC almost assembled!") |
+|:--:|
+| *CNC almost assembled! Just need to mount the stepper motors, belts, pulleys, and wiring.* |
 
 ![CNC Done](/images/MPCNC/cnc-wires.jpeg "CNC wiring, with tape measure trick")
 Some wire management, using a cheap tape measure to give some rigidity to the cable harness. For protection and a cleaner look, I wrapped all the wires in nylon cable sleeving. I also opted to use a different "spindle" than what was recommended from the plans - my Makita compact router is more powerful and has variable speed control, which makes my machine more robust.
