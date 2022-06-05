@@ -48,9 +48,7 @@ In the future, I plan to strengthen the areas that damaged easily and reoptimize
 To spice things up, my friends running the competitions have altered the rules to allow for machined ABS and UPVC materials on our robots! These materials are significantly stronger than that of most 3D printed parts, so they are perfect for essential supports or weapons. I chose to make my drum out of UPVC and I machined it on one of the school's mills. The new optimized geometry of the teeth on this drum are more flat (as opposed to curves) and have an inward rake angle so that it has more surface area for impact (and will not dull as fast), yet still be able to "pull" things in.
 
 Here is a profile of the new drum design - the enclosed curves on the teeth are vestiges of the old design for reference:
-![New Drum Design](/images/antweight/drum-v2.png "Profile of new drum design")
 
-![Robot Photo with Improvements](/images/antweight/v2-photo.JPG "Antweight robot with new wedges and UPVC drum")
-
+| ![New Drum Design](/images/antweight/drum-v2.png "Profile of new drum design") | ![Robot Photo with Improvements](/images/antweight/v2-photo.JPG "Antweight robot with new wedges and UPVC drum") |
 
 **Total Cost:** ~$100, most cost subsidized by WPI
