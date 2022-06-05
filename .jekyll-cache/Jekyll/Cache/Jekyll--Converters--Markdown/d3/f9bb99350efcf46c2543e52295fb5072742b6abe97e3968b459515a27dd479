@@ -1,5 +1,0 @@
-I"�
-<p><strong>Project objectives:</strong>
-Program a robot to autonomously navigate an “obstacle course” consisting of a small ramp tucked into a corner of a room while balancing an object such as a water bottle or cup atop the robot. This project differed from the previous course as it focused more on software as opposed to hardware. The robot was based a Pololu Romi Chassis kit with the Pololu 32U4 control board. The operation of the robot was to be entirely autonomous with the help of a suite of sensors, including Hall-effect encoders, IR reflectance sensors, and ultrasonic distance sensors. An additional challenge to the project was to be the fastest team to traverse the course.
-</p>
-:ET

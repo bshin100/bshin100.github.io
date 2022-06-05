@@ -1,5 +1,0 @@
-I"¤
-<p><strong>Project objectives:</strong>
-The objectives of this project were to understand and control a <a href="https://github.com/Hephaestus-Arm/HephaestusArm2">3-DOF robotic arm</a> to manipulate colored balls. The final outcome was to be a pick and place system for four distictly colored balls using computer vision and principles of robotics learned in this course, such as: forward kinematics, inverse kinematics, velocity kinematics, and trajectory generation. The robotic arm in previous years, was to be assembled by the students at the beginning of the course; however, during this particular instance of the course, it was provided pre-assembled by the TAs.
-</p>
-:ET

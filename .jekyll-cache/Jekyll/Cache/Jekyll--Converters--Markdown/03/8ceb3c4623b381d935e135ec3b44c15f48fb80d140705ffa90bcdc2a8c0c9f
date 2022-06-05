@@ -1,5 +1,0 @@
-I"
-<p><strong>Project objectives:</strong>
-Design, build, and program a robot that would manipulate small square plates made of plastic with defined weights. The manipulations involved picking up these plates from a platform, lifting them, and placing/removing them on/from an elevated structure - resemblant to the angled roof of a house. The robot was built upon a Pololu Romi Chassis kit with the Pololu 32U4 control board. The operation of the robot was to be entirely autonomous with the help of a suite of sensors, including Hall-effect encoders, IR reflectance sensors, and ultrasonic distance sensors. The only forms of user interaction were the initial placement/setup of the robot and several stop-points in the sequence for user confirmation (for safety).
-</p>
-:ET
