@@ -10,9 +10,7 @@ featured_img: /images/moodlite-still.jpg
 <!-- excerpt-end -->
 ### Time frame: January, 2019 - October, 2020
 
-{:refdef: style="text-align: center"}
-![Finished product.](/images/moodlite.gif "Finished Product.")
-{:refdef}
+![Finished product.](/images/moodlite.gif "Finished Product."){: style="float: left; padding: 15px"}
 
 This project is inspired by the triangular RGB LED light tiles commercially available by the company nanoleaf. A passionate maker was inspired by the same product but was similarly not too stoked seeing the price. I decided to follow the open-source guide and design made available by this maker [called moodlite.](https://moodlite.co.uk/)
 
@@ -20,11 +18,11 @@ These lights are highly customizable, Wi-Fi enabled wall tiles that have program
 
 I deviated from the main design in that I decided to place three LEDs per corner of the triangular tiles so that they would be brighter. I also initially opted to use a more powerful Arduino-based Wi-Fi chip: the ESP32 as opposed to the ESP8266. 
 
-While 3D printing appears to be a matter of clicking a few buttons and having the machine spit out parts, there is much more to that involving hundreds of hours of research that I may detail in a future post. The main difficulties in this 3D printing project involved bed adhesion for such a large surface area. While it seems counter-intuitive that a large surface area has trouble sticking to a print bed, the corners of these parts peeled up and caused warping of the print - in a project where flat and clean prints are imperative to the final product. I also had to decide the color of my filament. There are many different brands and compositions, even in just PLA, so "white" isn't a simple choice. The brand of white I had diffused well, and I also tested clear filament at different infill levels to see the effect.
+While 3D printing appears to be a matter of clicking a few buttons and having the machine spit out parts, there is much more to that involving hundreds of hours of research that I may detail in a future post. The main difficulties in this 3D printing project involved bed adhesion for such a large surface area. While it seems counter-intuitive that a large surface area has trouble sticking to a print bed, the corners of these parts peeled up and caused warping of the print - in a project where flat and clean prints are imperative to the final product. 
 
-{:refdef: style="text-align: center"}
-![Diffusion testing](/images/led-testing.gif "Diffusion testing"){: style="width: 40%"}
-{:refdef}
+I also had to decide the color of my filament. There are many different brands and compositions, even in just PLA, so "white" isn't a simple choice. The brand of white I had diffused well, and I also tested clear filament at different infill levels to see the effect.
+
+![Diffusion testing](/images/led-testing.gif "Diffusion testing"){: style="float: right; padding: 15px; width: 40%"}
 
 The project involved a lot of careful planning and soldering between each strip of LEDs in each tile. Between each strip of LEDs and the edges of the tiles are 3-pin jumper wires (traditionally used for servo motors) that allow the tiles to be modular and rearranged in any pattern. One consideration I had while making this project was that the design used these Dupont wires and connectors to run a giant strip of LEDs in series. These are 28AWG wires that aren't meant to take a lot of current, and with my reasonably conservative setup of 90 total LEDs, it would certainly be questionable. Each WS2812B LED can theoretically draw up to 60mA of current, which totals to over 5 Amps for my setup. I feared that these tiny wires would burn up under such loads, however seeing that many other people created this project with even larger setups, and that the 60mA rating for the LEDs were for white light at full brightness, I decided to roll the dice on this one and continue on. 
 
