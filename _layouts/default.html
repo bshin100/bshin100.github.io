@@ -9,7 +9,7 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     {% seo %}
@@ -27,11 +27,38 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">PROJECTS</a>
-            <a href="{{ site.baseurl }}/school-projects">SCHOOL</a>
-            <a href="{{ site.baseurl }}/about">ABOUT ME</a>
+          <nav id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              {% assign links = site.data.navigation %}
+              {% for link in links %}
+                  {% assign class = nil %}
+                  {% if page.url contains link.url %}
+                      {% assign class = 'active' %}
+                  {% endif %}
+                  {% if link.sublinks %}
+                      <li class="dropdown {{ class }}">
+                          <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              {% for sublink in link.sublinks %}
+                                  {% if sublink.title == 'separator' %}
+                                      <li role="separator" class="divider"></li>
+                                  {% else %}
+                                      <li>
+                                          <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                      </li>
+                                  {% endif %}
+                              {% endfor %}
+                          </ul>
+                      </li>
+                  {% else %}
+                      <li class="{{ class }}">
+                          <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                  {% endif %}
+              {% endfor %}
+            </ul>
           </nav>
+
         </header>
       </div>
     </div>
@@ -49,5 +76,10 @@
     </div>
 
     {% include analytics.html %}
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

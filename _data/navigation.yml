@@ -1,0 +1,17 @@
+- title: Projects
+  url: /index.html
+  sublinks:
+    - title: Plastic Antweight Combat Robot
+      url: /Plastic-Antweight-Combat-Robot/
+    - title: CNC Router Table
+      url: /CNC-Router-Table/
+    - title: Beetleweight Combat Robot
+      url: /Beetleweight-Combat-Robot/
+    - title: DIY Electric Longboard
+      url: /DIY-Electric-Longboard/
+    - title: LED Light Tiles
+      url: /LED-Light-Tiles/
+- title: School Projects
+  url: /school-projects/
+- title: About
+  url: /about/
