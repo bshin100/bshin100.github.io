@@ -5,6 +5,9 @@ source "https://rubygems.org"
 # gem "rails"
 
 gem "jekyll", "~> 4.2"
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'jquery-rails'
 
 group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.8"
