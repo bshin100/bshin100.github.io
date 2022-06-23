@@ -1,4 +1,4 @@
-- title: Projects
+- title: PROJECTS
   url: /index.html
   sublinks:
     - title: Plastic Antweight Combat Robot
@@ -11,7 +11,10 @@
       url: /DIY-Electric-Longboard/
     - title: LED Light Tiles
       url: /LED-Light-Tiles/
-- title: School Projects
+    - title: separator
+    - title: Website
+      url: /Test-Post/
+- title: SCHOOL
   url: /school-projects/
-- title: About
+- title: ABOUT ME
   url: /about/
