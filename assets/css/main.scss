@@ -197,11 +197,11 @@ img {
 .site-info {
 	float: left;
 
-	// @include mobile {
-	// 	float: none;
-	// 	display: block;
-	// 	margin: 0 auto;
-	// }
+	@include mobile {
+		float: left;
+		display: block;
+		margin: 0 auto 0 0;
+	}
 }
 
 .site-name {
@@ -219,9 +219,9 @@ img {
 	color: $gray;
 	font-size: 16px;
 
-	@include mobile {
-		margin: 3px 0;
-	}
+	// @include mobile {
+	// 	margin: 3px 0;
+	// }
 }
 
 // NAVIGATION BAR //
@@ -248,13 +248,16 @@ img {
 		line-height: 38px;
 }*/
 
-/*@mobile {
-		#navigation .navbar,
-		#naviation .navbar-toggler {
+@include mobile {
+		#navigation .navbar-toggler {
 				float: none !important;
 				margin-right: 0;
 		}
-}*/
+
+		.navbar {
+			padding: 0.5rem 0 !important;
+		}
+}
 
 //
 // .main
