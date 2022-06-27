@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "image-carousel";
 
 @import 'bootstrap/bootstrap';
 // Syntax highlighting @import is at the bottom of this file
@@ -177,22 +178,9 @@ img {
 	}*/
 }
 
-.site-avatar {
-	float: left;
-	width: 70px;
-	height: 70px;
-	margin-right: 15px;
 
-	@include mobile {
-		float: none;
-		display: block;
-		margin: 0 auto;
-	}
 
-	img {
-		border-radius: 5px;
-	}
-}
+// NAVIGATION BAR //
 
 .site-info {
 	float: left;
@@ -224,8 +212,6 @@ img {
 	// }
 }
 
-// NAVIGATION BAR //
-
 #navigation {
 	min-height: 70px !important;
 	margin-right: auto !important;
@@ -236,22 +222,14 @@ img {
 	margin-right: 15px;
 
 	img {
-			border-radius: 5px;
+		border-radius: 5px;
 	}
 }
 
-/*#navigation #navbar {
-		font-family: $helveticaNeue;
-		color: $darkGray;
-		font-size: 18px;
-		font-weight: 300;
-		line-height: 38px;
-}*/
-
 @include mobile {
 		#navigation .navbar-toggler {
-				float: none !important;
-				margin-right: 0;
+			float: none !important;
+			margin-right: 0;
 		}
 
 		.navbar {

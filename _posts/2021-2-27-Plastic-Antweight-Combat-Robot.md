@@ -22,6 +22,7 @@ The "Antweight" class of combat robotics typically has a few basic rules and con
 I designed the robot to be a drum spinner - where a drum with a few impactors ("teeth") spins to inflict damage. Here is the design in Solidworks: 
 
 ![Solidworks Render](/images/antweight/antweight-render.jpg "Solidworks Render")
+
 The entirety of the chassis is 3D printed, with a main body and modular components. I have been improving on my design for additive manufacturing - there is an entire set of factors to keep in mind while designing such as large tolerances, part/layer orientation, and mechanical design rules such as compression on axles and intentional shear points - just to name a few. Considering and carefully designing the parts with respect to these factors makes for a robust and optimized project. I may have mentioned this in my previous posts, but I'd like to place more emphasis on the layer orientation. For a 3D printed part, it will always have more strength parallel to its layers as opposed to perpendicular. With this in mind, the most critical modules are the ones that hold the axle for the drum spinner. These "rails" are constrained in several ways and when assembled, they are surprisingly rigid. 
 
 Material selection also is an important design choice when making a combat robot. This robot is mainly PLA due to its easy printing and low cost - PLA works great as it is rigid and high strength. The drum spinner is printed out of PETG plastic for its greater strength and impact resistance/ductility. The chassis of the robot may benefit from being printed in PETG but it's simply easier and cheaper to use PLA as it is not a critical thing. CNC Kitchen on YouTube has excellent analysis of different filaments, performing real tests himself. [Here's one of his write-ups comparing strengths of common plastic filaments](https://www.cnckitchen.com/blog/comparing-pla-petg-amp-asa-feat-prusament).
@@ -31,9 +32,7 @@ The weight analysis in the CAD drawings yielded 0.95 lbs or 15.2 ounces - just b
 #### Assembly
 Here is the robot assembled (I had not put on the foam wheels until after the first two pictures were taken):
 
-![Robot Assembled 1](/images/antweight/ant-assembled-1.jpeg "Robot Assembled, no top plate"){: style="float: left; width: 44.7%; padding: 10px"}
-
-![Robot Assembled 2](/images/antweight/ant-assembled-2.jpeg "Robot Assembled with top plate"){: style="float: right; width: 50%; padding: 10px"}
+![Robot Assembled 1](/images/antweight/ant-assembled-1.jpeg "Robot Assembled, no top plate")
 
 ![Robot Photo](/images/antweight/antweight-photo.jpg "Robot photoshoot! Credit to Nick Hom.")
 
@@ -49,6 +48,6 @@ To spice things up, my friends running the competitions have altered the rules t
 
 Here is a profile of the new drum design - the enclosed curves on the teeth are vestiges of the old design for reference:
 
-| ![New Drum Design](/images/antweight/drum-v2.png "Profile of new drum design") | ![Robot Photo with Improvements](/images/antweight/v2-photo.JPG "Antweight robot with new wedges and UPVC drum") |
+| ![New Drum Design](/images/antweight/drum-v2.png "Profile of new drum design"){: style="width: 96%"} | ![Robot Photo with Improvements](/images/antweight/v2-photo.JPG "Antweight robot with new wedges and UPVC drum") |
 
 **Total Cost:** ~$100, most cost subsidized by WPI

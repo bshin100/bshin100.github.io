@@ -1,0 +1,14 @@
+#imageCarousel .carousel-item {
+	text-align: center;
+	text-shadow: 1px 1px 2px $black;
+	img {
+		//max-height: 600px
+	}
+	h5 {
+		color: $white;
+		margin: 0 0 8px;
+	}
+	p {
+		margin: 0 0 16px;
+	}
+}

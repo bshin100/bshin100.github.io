@@ -22,7 +22,9 @@ Another busy school year mixed with pandemic restrictions, I wasn't able to cont
 #### Design
 I designed the robot to be a drum spinner - in combat robotics, this entails where a "drum" with a few impactors ("teeth") spins to inflict damage.
 Here is the design of the robot (late 2019):
+
 ![CAD Model of Beetleweight](/images/beetleweight/beetle-model.PNG "CAD Model of Beetleweight")
+
 The design goal for this robot aside from the "weapon class" was for it to be robust and powerful, with the drivetrain integrated within the main body of the chassis. The reason for this was that having watched countless BattleBots episodes and Beetleweight matches online, I noticed that wheels (and wheel guards) were usually among the first vulnerabilities of the robots. If the opponent disables the drivetrain, the match is essentially lost. With that in mind, my design houses the drivetrain all within the armor and chassis of the robot for extra protection, with a trade-off for robot width. It's more than 7 inches wide! Another design goal I had in mind was to keep it simple - custom parts were to be easy to mill and if possible, accessible purchased components for electronics and other hardware.
 
 The first CAD iterations of the robot actually had a solid aluminum chassis on all sides, but to my disappointment, I ran the weight analysis on Inventor and it was *WAY* too heavy. Instead, I opted for 3/8" thick ultra-high molecular weight polyethylene (UHMW) plastic bar stock for the side rails with an aluminum front panel. The side rails were constrained in the back with an appropriately-sized aluminum hex standoff and further covered with 3D printed TPU flexible plastic. The UHMW plastic side rails were a good solution for my weight problem as this material is strong and impact resistant. It was a new material for me as I had not worked with many other plastics, other than 3D printed polymers and Delrin (acetal) in the past. UHMW is a commonly used material in combat robotics. The top and bottom plates of the robot are also made with UHMW sheet stock as they need to protect the robot, and as for the bottom plate, be an integral part of the frame and mounting of other hardware. The chassis needed to be sized carefully to efficiently protect and hold all of the electronic components.
@@ -34,21 +36,8 @@ Now, onto the star of the show: the weapon! There are many ways to implement a d
 The final weight in CAD for the robot was a tad over 3lbs. I was a bit concerned as this didn't account for the weight of the wires and various connectors; however, oftentimes things like 3D printed parts end up being lighter than expected. Additionally, the CAD analysis uses general material properties for the parts and isn't always accurate. The final weight after assembly turned out to be 2lbs, 13oz!
 
 #### Fabrication & Assembly
-The aluminum front panel milled (I'm very proud how clean it looks):
-![Milled Aluminum Front Panel](/images/beetleweight/beetle-front-panel.JPG "Milled Aluminum Front Panel")
-This was done on a Haas MiniMill at my school's machine shop and it took about 2 hours with several fixturing setups.
 
-Here are the UHMW side rails also machined on the mills:
-![UHMW Side Rails](/images/beetleweight/uhmw-rails.jpg "UHMM Side Rails")
-
-And here is a mock-up of the basic chassis of the robot:
-![Chassis Mock-up](/images/beetleweight/beetle-mockup.jpg "Chassis Mock-up")
-
-Some tight tolerances with the electronics bay! Not pictured is the battery and the rest of the control electronic components.
-![Electronics bay](/images/beetleweight/beetle-electronics.jpg "Electronics bay")
-
-We're getting there! Just needs some TPU spacers.
-![Almost Final Mock-up](/images/beetleweight/beetle-almost.JPG "Almost Final Mock-up")
+{% include image-carousel.html page="beetleweight" %}
 
 And I'm done! Photo was taken in a staging area at the July 2021 Norwalk Havoc competition.
 ![Completed Robot](/images/beetleweight/beetle-complete.jpg "Completed Robot")

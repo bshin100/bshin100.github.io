@@ -1,0 +1,38 @@
+<!-- _includes/image-carousel.html -->
+{% assign carousels = site.data.carousel-config %}
+{% assign carouselSlides = nil %}
+{% for carouselEntity in carousels %}
+  {% if carouselEntity.page contains include.page %}
+    {% assign carouselSlides = carouselEntity.images %}
+  {% endif %}
+{% endfor %}
+
+<div id="imageCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    {% for slide in carouselSlides %}
+      {% if forloop.first == true %}
+        <li data-target="#imageCarousel" data-slide-to="{{ forloop.index0 }}" class="active"></li>
+      {% endif %}
+      <li data-target="#imageCarousel" data-slide-to="{{ forloop.index0 }}"></li>
+    {% endfor %}
+  </ol>
+  <div class="carousel-inner">
+    {% for slide in carouselSlides %}
+      <div class="carousel-item {% if forloop.first == true %}active{% endif %}">
+        <img class="img-responsive" src="{{ slide.url }}" alt="{{ slide.title }}">
+        <div class="carousel-caption d-none d-sm-block">
+          <h5>{{ slide.title }}</h5>
+          <p>{{ slide.caption }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
