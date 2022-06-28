@@ -1,17 +1,17 @@
 - page: beetleweight
   images:
     - title: Milled Aluminum Front Panel
-      url: /images/beetleweight/beetle-front-panel.JPG
+      url: /images/beetleweight/beetle-front-panel-normalized.png
       caption: This was done on a Haas MiniMill at my school's machine shop and it took about 2 hours with several fixturing setups.
     - title: UHMW Side Rails
-      url: /images/beetleweight/uhmw-rails.jpg
+      url: /images/beetleweight/uhmw-rails-normalized.png
       caption: The UHMW side rails were also machined on the mill.
     - title: Chassis Mock-up
-      url: /images/beetleweight/beetle-mockup.jpg
+      url: /images/beetleweight/beetle-mockup-normalized.png
       caption: A mock-up of the basic chassis of the robot.
     - title: Electronics Bay
-      url: /images/beetleweight/beetle-electronics.jpg
+      url: /images/beetleweight/beetle-electronics-normalized.png
       caption: Some tight tolerances with the electronics bay! Not pictured is the battery and the rest of the control electronic components.
     - title: Almost Final Mock-up
-      url: /images/beetleweight/beetle-almost.JPG
+      url: /images/beetleweight/beetle-almost-normalized.png
       caption: We're getting there! Just needs some TPU spacers.
