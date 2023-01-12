@@ -2,7 +2,7 @@
 layout: post
 title: DIY Electric Longboard
 published: true
-featured_img: /images/EBoard/EBoard-Thumb.jpeg
+featured_img: /images/EBoard/EBoard-Thumb.png
 ---
 
 > A DIY electric longboard with 3200+ Watts of power capable of about 15 miles range and 32+ mph speed.

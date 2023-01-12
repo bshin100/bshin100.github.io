@@ -10,21 +10,24 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="school_posts">
-  	  {% assign schoolPosts = site.pages | where: "tag","school" %}
+  <div class="posts">
+  	{% assign schoolPosts = site.pages | where: "tag","school" %}
 	  {% for post in schoolPosts %}
-	    <article class="post">
-
-	      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-	      <div class="entry">
+	    <div class="media post">
+	      <div class="media-left align-self-center mr-3">
+	      	<a href="{{ site.baseurl }}{{ post.url }}">
+      			<img class="media-object" src="{{ post.featured_img }}" alt="Post Thumbnail" style="width: 128px; height: 128px; margin-right: 15px">
+    			</a>
+	      </div>
+	      <div class="media-body">
+	      	<h1 class="media-heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 	        {% assign excerptParts = post.content | split: post.excerpt_separator %}
 	        {% assign excerptInner = excerptParts[0] | split: post.excerpt_start %}
-			{{ excerptInner[1] | markdownify | truncatewords: 50 }}
+					{{ excerptInner[1] | markdownify | truncatewords: 50 }}
+					<p></p>
+					<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 	      </div>
-
-	      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-	    </article>
+	    </div>
 	  {% endfor %}
   </div>
 

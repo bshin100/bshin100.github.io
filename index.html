@@ -5,17 +5,18 @@ published: true
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      
-      <div class="entry">
-        {{ post.excerpt }}
-        <img src="{{ post.featured_img }}" alt="Post Thumbnail" style="width: 75%">
-      </div>
-
-      <p></p>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <div class="media post" style="min-height: 225px;">
+        <div class="media-left align-self-center mr-3">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <img class="media-object" src="{{ post.featured_img }}" alt="Post Thumbnail" style="width: 200px; margin-right: 15px">
+          </a>
+        </div>
+        <div class="media-body">
+          <h1 class="media-heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+          {{ post.excerpt}}
+          <p></p>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </div>
+    </div>
   {% endfor %}
 </div>

@@ -2,7 +2,7 @@
 layout: post
 title: CNC Router Table
 published: true
-featured_img: /images/MPCNC/cnc-more.jpeg
+featured_img: /images/MPCNC/cnc-more.jpg
 ---
 
 > Precision computer-controlled router capable of milling wood, plastic, & aluminum.
@@ -42,7 +42,7 @@ There was a slight pause in the project as I had to return to college. More to c
 ### Update Winter 2020-2021
 It's finished! I certainly could've banged this out by the end of the summer, however I enjoyed taking my time with this build (and spending some much needed time with the friends and family I couldn't see during lock-down) as it has allowed me to think everything through in every step of the process.
 
-{% include image.html img="/images/MPCNC/cnc-more.jpeg"
+{% include image.html img="/images/MPCNC/cnc-more.jpg"
     title="CNC almost assembled!"
     caption="CNC almost assembled! Just need to mount the stepper motors, belts, pulleys, and wiring." %}
 
