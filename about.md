@@ -16,6 +16,7 @@ Some of my other skills include:
     - Object-oriented
     - Embedded programming
     - Full-stack application development
+- Agile/Scrum project development workflow
 - Computer-aided design (CAD) with Autodesk Inventor and Solidworks
     - Geometric Dimnensioning & Tolerancing (GD&T)
     - Design for Manufacturability (DFM)
