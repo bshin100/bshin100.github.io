@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://bshin100.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bshin100.github.io/" rel="alternate" type="text/html" /><updated>2023-09-14T20:35:36+00:00</updated><id>https://bshin100.github.io/feed.xml</id><title type="html">Brian Shin</title><subtitle>Maker &amp; Engineer</subtitle><entry><title type="html">Plastic Antweight Combat Robot</title><link href="https://bshin100.github.io/Plastic-Antweight-Combat-Robot/" rel="alternate" type="text/html" title="Plastic Antweight Combat Robot" /><published>2021-02-27T00:00:00+00:00</published><updated>2021-02-27T00:00:00+00:00</updated><id>https://bshin100.github.io/Plastic-Antweight-Combat-Robot</id><content type="html" xml:base="https://bshin100.github.io/Plastic-Antweight-Combat-Robot/"><![CDATA[<blockquote>
+  <p>A custom-engineered 3D printed combat robot less than 1lb.</p>
+</blockquote>
+
+<!-- excerpt-end -->
+<h3 id="time-frame-december-2020---february-2021">Time frame: December, 2020 - February, 2021</h3>
+
+<h4 id="introduction">Introduction</h4>
+<p>Taking my intro from my <a href="/Beetleweight-Combat-Robot/">Beetleweight</a> combat robot since it’s the same concept:
+Ever seen BattleBots the TV show before? If not, it’s essentially lots of 250-lb remote-operated robots that destructively battle in a contained box with high-power spinners, drums, or flippers. It’s hard to describe in text, so I would recommend looking up a <a href="https://youtu.be/diOJz6U6MEA?t=26">quick clip online.</a> The power stored in these weapons are unfathomable. These cost upwards of a luxury vehicle and more.</p>
+
+<p>This project is similar to those robots but on a much smaller (and cheaper) scale. I decided to do this under the guidance and funding of the combat robotics club at WPI. This is the second combat robot that I have designed, but on a smaller scale than the first. This is for learning and fun as well as to also participate in my friend’s Interactive Qualifying Project at WPI.</p>
+
+<p>The “Antweight” class of combat robotics typically has a few basic rules and constraints, namely that the robots are less than 1 pound. For this robot and accompanying competitions, the notable differences are that all robots must be plastic and 3D printed (excluding electronics and fasteners). As of now, the only allowed plastics are PLA, ABS, and PETG. Other plastics and fabrication methods are not allowed; however, there may be more in the future. This is mainly to keep it fair and consistent to what is commonly accessible.</p>
+
+<h4 id="design">Design</h4>
+<p>I designed the robot to be a drum spinner - where a drum with a few impactors (“teeth”) spins to inflict damage. Here is the design in Solidworks:</p>
+
+<p><img src="/images/antweight/antweight-render.jpg" alt="Solidworks Render" title="Solidworks Render" /></p>
+
+<p>The entirety of the chassis is 3D printed, with a main body and modular components. I have been improving on my design for additive manufacturing - there is an entire set of factors to keep in mind while designing such as large tolerances, part/layer orientation, and mechanical design rules such as compression on axles and intentional shear points - just to name a few. Considering and carefully designing the parts with respect to these factors makes for a robust and optimized project. I may have mentioned this in my previous posts, but I’d like to place more emphasis on the layer orientation. For a 3D printed part, it will always have more strength parallel to its layers as opposed to perpendicular. With this in mind, the most critical modules are the ones that hold the axle for the drum spinner. These “rails” are constrained in several ways and when assembled, they are surprisingly rigid.</p>
+
+<p>Material selection also is an important design choice when making a combat robot. This robot is mainly PLA due to its easy printing and low cost - PLA works great as it is rigid and high strength. The drum spinner is printed out of PETG plastic for its greater strength and impact resistance/ductility. The chassis of the robot may benefit from being printed in PETG but it’s simply easier and cheaper to use PLA as it is not a critical thing. CNC Kitchen on YouTube has excellent analysis of different filaments, performing real tests himself. <a href="https://www.cnckitchen.com/blog/comparing-pla-petg-amp-asa-feat-prusament">Here’s one of his write-ups comparing strengths of common plastic filaments</a>.</p>
+
+<p>The weight analysis in the CAD drawings yielded 0.95 lbs or 15.2 ounces - just below the constraint. For increased accuracy in this, the empirical measurements for the weight of the electronics were overridden as well as the calculated weights for the 3D prints from Cura (the 3D printing slicing client). The actual weight after it was assembled and wired, came out to only 14.6 oz.</p>
+
+<h4 id="assembly">Assembly</h4>
+<p>Here is the robot assembled (I had not put on the foam wheels until after the first two pictures were taken):</p>
+
+<p><img src="/images/antweight/ant-assembled-1.jpeg" alt="Robot Assembled 1" title="Robot Assembled, no top plate" /></p>
+
+<p><img src="/images/antweight/antweight-photo.jpg" alt="Robot Photo" title="Robot photoshoot! Credit to Nick Hom." /></p>
+
+<h4 id="competitions">Competition(s)</h4>
+<p>Below is a picture after its debut competition. The robot performed surprisingly well and the main point of failure was my poor driving and low-quality drive motors. You can see the chips out of the PETG drum weapon and out of the PLA wedges. I went through two PETG drums as the first one split in half. It is truly amazing to see the power stored in these robot as another competitor’s impact chipped large chunks out of my PETG drum, independent of any layer lines or geometry of the part. The damage is pure shearing of the material.
+<img src="/images/antweight/ant-post-comp.jpg" alt="Post-Comp Picture" title="That's a lot of damage!" style="float: right; width: 40%; padding: 15px" /></p>
+
+<p>In the future, I plan to strengthen the areas that damaged easily and reoptimize the tooth geometry of the drum spinner to impart more damage and reduce chipping. Another fun tip I learned was to reheat the printed parts with a heat gun to improve the fusion between layers in the plastic, leading to increased strength.</p>
+
+<p><strong>Update April 2021</strong></p>
+
+<p>To spice things up, my friends running the competitions have altered the rules to allow for machined ABS and UPVC materials on our robots! These materials are significantly stronger than that of most 3D printed parts, so they are perfect for essential supports or weapons. I chose to make my drum out of UPVC and I machined it on one of the school’s mills. The new optimized geometry of the teeth on this drum are more flat (as opposed to curves) and have an inward rake angle so that it has more surface area for impact (and will not dull as fast), yet still be able to “pull” things in.</p>
+
+<p>Here is a profile of the new drum design - the enclosed curves on the teeth are vestiges of the old design for reference:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/images/antweight/drum-v2.png" alt="New Drum Design" title="Profile of new drum design" style="width: 96%" /></td>
+      <td><img src="/images/antweight/v2-photo.JPG" alt="Robot Photo with Improvements" title="Antweight robot with new wedges and UPVC drum" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Total Cost:</strong> ~$100, most cost subsidized by WPI</p>]]></content><author><name></name></author><summary type="html"><![CDATA[A custom-engineered 3D printed combat robot less than 1lb.]]></summary></entry><entry><title type="html">Beetleweight Combat Robot</title><link href="https://bshin100.github.io/Beetleweight-Combat-Robot/" rel="alternate" type="text/html" title="Beetleweight Combat Robot" /><published>2020-10-04T00:00:00+00:00</published><updated>2020-10-04T00:00:00+00:00</updated><id>https://bshin100.github.io/Beetleweight-Combat-Robot</id><content type="html" xml:base="https://bshin100.github.io/Beetleweight-Combat-Robot/"><![CDATA[<blockquote>
+  <p>Custom engineered and fabricated combat robot constrained under 3lbs.</p>
+</blockquote>
+
+<!-- excerpt-end -->
+<h3 id="time-frame-november-2019---july-2021">Time frame: November, 2019 - July, 2021</h3>
+
+<h4 id="introduction">Introduction</h4>
+<p>Ever seen BattleBots the TV show before? If not, it’s essentially lots of 250-lb remote-operated robots that destructively battle in a contained box with high-power spinners, drums, or flippers. It’s hard to describe in text, so I would recommend looking up a <a href="https://youtu.be/diOJz6U6MEA?t=26">quick clip online.</a> The power stored in these weapons are unfathomable. These cost upwards of a luxury vehicle and more.</p>
+
+<p>This project is similar to those robots but on a much smaller (and cheaper) scale. I decided to do this under the guidance and funding of the combat robotics club at WPI (sorta, more on that in a bit). A [project like this would allow me to delve into the world of combat robotics as well as gain familiarity and experience with the fancy machine shop tools available to me from my college. Sure, there are some vendors that sell functionally complete kits online, but where’s the fun in that?</p>
+
+<p>The initial design was completed in November, 2019, and parts were purchased shortly after. Unfortunately, given the timeline of a busy spring semester and then a global pandemic, not much of this project has yet to come to fruition. Quite unfortunately, I also found out that the expected reimbursements from WPI only applied if the robot was completed then competed (at a local competition like <a href="https://50day.io/mediawiki/index.php/Norwalk_Havoc_Robot_League">Norwalk Havoc</a>) within the same school year. Due to these circumstances, I was left with about $500 of electronic components and aluminum, steel, and plastic stock that I owned outright. Sad for my wallet, but it means I get to keep my robot!</p>
+
+<p>Another busy school year mixed with pandemic restrictions, I wasn’t able to continue working on this project until the end of the 2021 spring semester.</p>
+
+<h4 id="design">Design</h4>
+<p>I designed the robot to be a drum spinner - in combat robotics, this entails where a “drum” with a few impactors (“teeth”) spins to inflict damage.
+Here is the design of the robot (late 2019):</p>
+
+<p><img src="/images/beetleweight/beetle-model.PNG" alt="CAD Model of Beetleweight" title="CAD Model of Beetleweight" /></p>
+
+<p>The design goal for this robot aside from the “weapon class” was for it to be robust and powerful, with the drivetrain integrated within the main body of the chassis. The reason for this was that having watched countless BattleBots episodes and Beetleweight matches online, I noticed that wheels (and wheel guards) were usually among the first vulnerabilities of the robots. If the opponent disables the drivetrain, the match is essentially lost. With that in mind, my design houses the drivetrain all within the armor and chassis of the robot for extra protection, with a trade-off for robot width. It’s more than 7 inches wide! Another design goal I had in mind was to keep it simple - custom parts were to be easy to mill and if possible, accessible purchased components for electronics and other hardware.</p>
+
+<p>The first CAD iterations of the robot actually had a solid aluminum chassis on all sides, but to my disappointment, I ran the weight analysis on Inventor and it was <em>WAY</em> too heavy. Instead, I opted for 3/8” thick ultra-high molecular weight polyethylene (UHMW) plastic bar stock for the side rails with an aluminum front panel. The side rails were constrained in the back with an appropriately-sized aluminum hex standoff and further covered with 3D printed TPU flexible plastic. The UHMW plastic side rails were a good solution for my weight problem as this material is strong and impact resistant. It was a new material for me as I had not worked with many other plastics, other than 3D printed polymers and Delrin (acetal) in the past. UHMW is a commonly used material in combat robotics. The top and bottom plates of the robot are also made with UHMW sheet stock as they need to protect the robot, and as for the bottom plate, be an integral part of the frame and mounting of other hardware. The chassis needed to be sized carefully to efficiently protect and hold all of the electronic components.</p>
+
+<p>The drivetrain consisted of 3D printed PETG plastic mounts for two geared brushed DC motors with some commercial off-the-shelf (COTS) wheel hubs to accommodate the foam wheels. The weapon system was designed to have a de-coupled brushless motor within the frame so that it would not get damaged easily. Power from here was then transmitted to the drum via 3D printed pulleys and polyurethane round belting. The rest of the electronics were COTS solutions: 3S (12.6V) LiPo battery, a brushed dual motor controller for the drivetrain, a hobbyist electronic speed controller (ESC) for the weapon motor, a high-current switch, and lastly, a hobbyist receiver for remote control.</p>
+
+<p>Now, onto the star of the show: the weapon! There are many ways to implement a drum spinner design and at first, I was lost. It could be machined billet material but my wide design would make it certainly difficult to manufacture, not to mention very heavy. Others include “eggbeaters” since they usually employ an lightweight frame for the weapon with heavy-duty impactors attached - resembling the kitchen tool. I found inspiration for my design looking at several unique designs that caught my eye. My drum spinner features several thin AR500 steel blades with an inner hexagonal profile that rotationally constrains them to a hexagonal shaft, which in turn, would spin upon a titanium dead shaft (“dead” meaning it is not spinning) using needle bearings. There are spacers in between these blades to keep them laterally constrained. You’ll also notice some pointy bits out front - these are Grade 5 titanium prongs that further protect the business end while also helping with getting under other opponents’ robots. While this weapon design isn’t perfect, it worked pretty well.</p>
+
+<p>The final weight in CAD for the robot was a tad over 3lbs. I was a bit concerned as this didn’t account for the weight of the wires and various connectors; however, oftentimes things like 3D printed parts end up being lighter than expected. Additionally, the CAD analysis uses general material properties for the parts and isn’t always accurate. The final weight after assembly turned out to be 2lbs, 13oz!</p>
+
+<h4 id="fabrication--assembly">Fabrication &amp; Assembly</h4>
+
+<!-- _includes/image-carousel.html -->
+
+<div id="imageCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    
+      
+        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+      
+      <li data-target="#imageCarousel" data-slide-to="0"></li>
+    
+      
+      <li data-target="#imageCarousel" data-slide-to="1"></li>
+    
+      
+      <li data-target="#imageCarousel" data-slide-to="2"></li>
+    
+      
+      <li data-target="#imageCarousel" data-slide-to="3"></li>
+    
+      
+      <li data-target="#imageCarousel" data-slide-to="4"></li>
+    
+  </ol>
+  <div class="carousel-inner">
+    
+      <div class="carousel-item active">
+        <img class="img-responsive" src="/images/beetleweight/beetle-front-panel-normalized.png" alt="Milled Aluminum Front Panel" />
+        <div class="carousel-caption d-none d-sm-block">
+          <h5>Milled Aluminum Front Panel</h5>
+          <p>This was done on a Haas MiniMill at my school's machine shop and it took about 2 hours with several fixturing setups.</p>
+        </div>
+      </div>
+    
+      <div class="carousel-item ">
+        <img class="img-responsive" src="/images/beetleweight/uhmw-rails-normalized.png" alt="UHMW Side Rails" />
+        <div class="carousel-caption d-none d-sm-block">
+          <h5>UHMW Side Rails</h5>
+          <p>The UHMW side rails were also machined on the mill.</p>
+        </div>
+      </div>
+    
+      <div class="carousel-item ">
+        <img class="img-responsive" src="/images/beetleweight/beetle-mockup-normalized.png" alt="Chassis Mock-up" />
+        <div class="carousel-caption d-none d-sm-block">
+          <h5>Chassis Mock-up</h5>
+          <p>A mock-up of the basic chassis of the robot.</p>
+        </div>
+      </div>
+    
+      <div class="carousel-item ">
+        <img class="img-responsive" src="/images/beetleweight/beetle-electronics-normalized.png" alt="Electronics Bay" />
+        <div class="carousel-caption d-none d-sm-block">
+          <h5>Electronics Bay</h5>
+          <p>Some tight tolerances with the electronics bay! Not pictured is the battery and the rest of the control electronic components.</p>
+        </div>
+      </div>
+    
+      <div class="carousel-item ">
+        <img class="img-responsive" src="/images/beetleweight/beetle-almost-normalized.png" alt="Almost Final Mock-up" />
+        <div class="carousel-caption d-none d-sm-block">
+          <h5>Almost Final Mock-up</h5>
+          <p>We're getting there! Just needs some TPU spacers.</p>
+        </div>
+      </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<p>And I’m done! Photo was taken in a staging area at the July 2021 Norwalk Havoc competition.
+<img src="/images/beetleweight/beetle-complete.jpg" alt="Completed Robot" title="Completed Robot" /></p>
+
+<h4 id="competition--future-directions">Competition &amp; Future Directions</h4>
+<p>In July 2021, I finally competed with my 3lb Beetleweight robot that was 1.5 years in the making! I was reasonably satisfied with the performance of my robot as it did what it was supposed to do! It drove well (but I definitely need more practice), and the weapon spun up. I won my first two matches but lost in the third elimination round to a very well-refined and powerful robot. It sustained some pretty good damage but the overall frame and chassis held out well. In this fight, I got hit on the side, and the opposing robot took a pretty nice chunk out of my UHMW side rail. I also had a weapon-to-weapon hit which sent me flying! This disabled my weapon and the impact shattered my PETG corner standoffs holding the top and bottom together, ultimately allowing the top plate to bulge out and leave me disabled and upside down. Upon further inspection after the match, I figured out why my weapon was disabled: the impact was hard enough to transmit through my steel teeth, through the aluminum hex shaft (which I thought would deform first), through the needle bearing (my next anticipated break-point), and finally onto my Grade 23 titanium axle, which bent ever so slightly but enough to restrict the bearings from rolling upon it. I couldn’t fix this before my match in the losers bracket, and had to forfeit (but this doesn’t count towards my overall 2-1 record! :) ). All in all, a pretty good first competition that I learned a lot from!</p>
+
+<p>In my next iteration of my robot, I definitely need to make a new titanium axle. Grade 23 is a bit softer than Grade 5 but it was a cheap and available option on eBay when I was sourcing the parts. I am considering trying to harden it as well, to prevent any bending. You might be wondering why I’m not using a long, stiff, hardened steel shoulder bolt as the shaft as it doesn’t need to be machined and can be purchased easily - and to that, it is more than double the weight of my titanium axle and I cannot afford this increase in weight. To further mitigate my seized weapon should the shaft bend again, my friend suggested that this dead shaft could be implemented with a redundant pair of roller bearings housed in the side rails. It wouldn’t really be a dead shaft anymore, but should the needle bearings in the main weapon assembly seize, the motor would end up spinning the whole axle itself. The weight of two extra bearings is something I can afford.</p>
+
+<p>I would also love to have a titanium wedge that spans across the front of the robot to better protect and deflect any weapons, especially horizontal spinners. I will need to find some more areas to reduce weight to accommodate for this wedge. As for some more minor changes, I’m switching out the PETG corner standoffs (colored blue at the back of the robot in the CAD model) with TPU. These will be more impact resistant and shouldn’t shatter with a big impact.</p>
+
+<p><strong>Total Cost:</strong> roughly $550, so far.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Custom engineered and fabricated combat robot constrained under 3lbs.]]></summary></entry><entry><title type="html">CNC Router Table</title><link href="https://bshin100.github.io/CNC-Router-Table/" rel="alternate" type="text/html" title="CNC Router Table" /><published>2020-10-04T00:00:00+00:00</published><updated>2020-10-04T00:00:00+00:00</updated><id>https://bshin100.github.io/CNC-Router-Table</id><content type="html" xml:base="https://bshin100.github.io/CNC-Router-Table/"><![CDATA[<blockquote>
+  <p>Precision computer-controlled router capable of milling wood, plastic, &amp; aluminum.</p>
+</blockquote>
+
+<!-- excerpt-end -->
+<h3 id="time-frame-june-2020---present">Time frame: June, 2020 - Present</h3>
+
+<p>After a few years’ experience with a commercial CNC router in my high school robotics shop (a Laguna for those know!), and some more with the vast array of Haas CNC mills at my university, I decided to challenge myself in building a precise and cost-effective CNC router during quarantine 2020.</p>
+
+<h4 id="design">Design</h4>
+<p>I am following the open-source platform from V1 Engineering - <a href="https://www.v1engineering.com/specifications/">the Mostly Printed CNC (MPCNC)</a>
+I decided on a build volume of 24” x 18” x 3” which is comparatively small to the 4’ x 8’ capability of my high school robotics machine, however definitely not needed for the parts I intend to mill. Having a small build volume is important for this design as it utilizes 3D printed components and mild-steel tubing as rails. A machine too large will encounter more vibration, inaccuracy, and begin to meet the rigidity limits of the tubing and plastic. As detailed on the V1 Engineering website, using EMT conduit - normally used for routing electrical wiring in houses and buildings - keeps the costs low, as opposed to the traditional linear rails on a professional machine. A nice upgrade that I wanted to do was to swap in the EMT conduit for some stainless steel tubing, but I couldn’t find a local supplier that wasn’t super expensive. The stainless steel would provide more rigidity and look nicer. Oh well.</p>
+
+<p>Here’s what the CNC Router will look similar to:
+<img src="/images/MPCNC/Primo-scaled.jpg" alt="V1 Engineering MPCNC Primo" title="V1 Engineering MPCNC Primo" /></p>
+
+<p><em>Note: Throughout the course of the build, a new and improved version of the design was published. Bummer. I was in too deep at this point, so I continued with the last-gen version.</em></p>
+
+<h4 id="3d-printing">3D Printing</h4>
+<p>I purchased the components individually (self-sourced) earlier in June and began 3D printing the parts. The dimensional accuracy and structural integrity of these printed parts are pretty important to having a precise machine. I encountered some difficulty with under-extrusion on my 3D printer, which was frustrating since I had about a year of problem-free printing prior to this project. I managed to get all of the parts printed in PLA, using a little over 1.5 kg. Oddly enough, I encountered another 3D printing issue regarding the smoothness of the curved surfaces:</p>
+
+<p><img src="/images/MPCNC/print-artifacts.jpg" alt="Bumpy 3D Prints" title="Top: SD Card Print; Bottom: Octoprint" style="float: right; width: 40%; padding: 15px" /></p>
+
+<p>During these curves, I would notice my printer “stuttering” and moving extremely slowly over the area, which was uncharacteristic of the printer. I looked into this issue for a little bit - it turned out to be related to the way <a href="https://octoprint.org/">Octoprint</a> interfaces with the 3D printer’s mainboard in sending the serial data. I suppose the G-Code for the curves tend to overload the serial buffer thus the stuttering. This issue was solved by printing with the traditional method of using a microSD card straight into the mainboard.</p>
+
+<h4 id="assembly">Assembly</h4>
+<p>After 240+ hours of printing (not including failed prints) I was ready to assemble. I had previously cut all of the steel conduit to length while waiting for the prints. First, I needed a table for this CNC to go on. I put together a simple and rigid work table from 2” x 4” lumber and a sheet of MDF on top to act as the work surface and spoilboard. Sheet goods (4’ x 8’) are always hard for me to acquire as I do not have a truck, and need to get them cut in half at my local home improvement store before they can fit in my car. I had the opportunity to use my new jobsite table saw to further size the sheets of MDF. Once mounted, I also partially cut two lines a few inches away from the edge, so the middle section is replaceable when it inevitably gets mangled, and I don’t have to disassemble my CNC machine.</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+    
+        <img src="https://bshin100.github.io//images/MPCNC/cnc-partial.jpeg" alt="Table with beginning assembly" width="50%" />
+    
+    
+    
+        <p class="image-caption">Table with part of the CNC mounted.</p>
+    
+</div>
+
+<p>There was a slight pause in the project as I had to return to college. More to come!</p>
+
+<hr />
+
+<h3 id="update-winter-2020-2021">Update Winter 2020-2021</h3>
+<p>It’s finished! I certainly could’ve banged this out by the end of the summer, however I enjoyed taking my time with this build (and spending some much needed time with the friends and family I couldn’t see during lock-down) as it has allowed me to think everything through in every step of the process.</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+    
+        <img src="https://bshin100.github.io//images/MPCNC/cnc-more.jpg" alt="CNC almost assembled!" />
+    
+    
+    
+        <p class="image-caption">CNC almost assembled! Just need to mount the stepper motors, belts, pulleys, and wiring.</p>
+    
+</div>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+    
+        <img src="https://bshin100.github.io//images/MPCNC/cnc-wires.jpeg" alt="CNC wiring, with tape measure trick" />
+    
+    
+    
+        <p class="image-caption">Some wire management, using a cheap tape measure to give some rigidity to the cable harness.</p>
+    
+</div>
+
+<p>For protection and a cleaner look, I wrapped all the wires in nylon cable sleeving. I also opted to use a different “spindle” than what was recommended from the plans - my Makita compact router is more powerful and has variable speed control, which makes my machine more robust.</p>
+
+<h4 id="control">Control</h4>
+<p>The choice of firmware to run on the mainboard to control the CNC router was <a href="https://marlinfw.org/">Marlin</a>. While Marlin is not typically used for CNC machines (it’s predominantly used for 3D printing), it has features that allow it to work, and I was familiar with it since it’s the same firmware on my 3D printer. The other alternative was Grbl, which I may try in the future to see the features it has that Marlin does not. I pulled the latest bugfix version of Marlin from the official GitHub, and tweaked the configuration files. With my particular control board, the BTT SKR V1.4 Turbo, flashing firmware was as easy as compiling it onto a microSD card and then powering up the mainboard. An advantage of running Marlin on this machine is the versatility - it can support many different tools other than a router/spindle, such as lasers, 3D printing hardware, or a drag knife.</p>
+
+<p>Since I did not purchase an LCD screen with an encoder nor a touch screen, there is no means of direct-to-mainboard control on this machine, unlike many 3D printers. Instead, I opted to simply use a serial terminal (such as pronterface, Repetier Host, or even Octoprint) on my old laptop to control the CNC router via USB. These terminals are good for the basic control of any computer-controlled system, like jogging the axes, sending commands, or even starting a program. The downside to this was that many free terminal software that I have tried are quite limited in capability and clearly are designed more for 3D printing. There are several very-capable paid CNC software packages such as Mach3; however, these are expensive and may require different electronics to properly interface with the actuators on the machine. I have settled on Repetier Host since it offers g-code visualization and streams to the machine, as well as axis jogging and zeroing. The zeroing feature is one of the most important parts of this machine’s design as there are no limit switches, thus no “home”. All positions are relative to wherever “home” is set with zeroing, which offers versatility with parts of different sizing and fixture positions.</p>
+
+<h4 id="usage">Usage</h4>
+<p>I’m still learning the ins-and-outs of the specifics to this machine. I intend to mill woods, plastics, and aluminum. I started off with test cuts in high-density foam and I’ve worked my way up to woods. Despite my experience with professional CNC mills and routers, some things do not translate directly into the usage of this machine. With a professional machine, rigidity while machining is almost always a given, and as such, many of the machines I’ve used already have recommended feeds and speeds with expensive-yet-consistent bits. I have much to learn about the limits of my machine and I fully intend on pushing those!</p>
+
+<p>My general process of operating the machine is much like others: it involves the CAD (Solidworks or Inventor) of the part, then CAM toolpath generation using Inventor CAM and an open-source g-code post-processing template that translates the instructions specific to my firmware. Next, I set up the machine by fixturing the stock on the work surface and zeroing the head at the origin defined for the part. Lastly, cut some chips!</p>
+
+<h4 id="future-directions">Future Directions</h4>
+<p>Like with many of my projects, nothing is ever truly “done.” I enjoy experimenting and upgrading my creations to the best they can be and to adapt to new features that I might want.</p>
+
+<p>Here are a few of my ideas heading forward for my CNC router:</p>
+<ul>
+  <li>Cleaner cabling and finishing touches</li>
+  <li>Dust collection/chip evacuation system</li>
+  <li>Explore new control software with more features and capabilities</li>
+  <li>Stainless steel rails for more rigidity</li>
+  <li>Independent gantry squaring with limit switches (currently the dual motors for the X and Y axis run in parallel - no independent control of individual motors)</li>
+  <li>Explore different tooling, such as a print head for a giant 3D printer or a laser engraver</li>
+</ul>
+
+<p><strong>Total Cost:</strong> $600+</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Precision computer-controlled router capable of milling wood, plastic, &amp; aluminum.]]></summary></entry><entry><title type="html">DIY Electric Longboard</title><link href="https://bshin100.github.io/DIY-Electric-Longboard/" rel="alternate" type="text/html" title="DIY Electric Longboard" /><published>2020-10-01T00:00:00+00:00</published><updated>2020-10-01T00:00:00+00:00</updated><id>https://bshin100.github.io/DIY-Electric-Longboard</id><content type="html" xml:base="https://bshin100.github.io/DIY-Electric-Longboard/"><![CDATA[<blockquote>
+  <p>A DIY electric longboard with 3200+ Watts of power capable of about 15 miles range and 32+ mph speed.</p>
+</blockquote>
+
+<!-- excerpt-end -->
+<h3 id="time-frame-august-2019">Time frame: August, 2019</h3>
+
+<p>Seeing videos of people riding both commercial and DIY electric longboards and efficiently traveling small distances (like on a college campus), I was inspired to create my own electric longboard. While I had minimal normal longboarding (or skating) experience, I thought this would be a fun project to challenge myself and stimulate my passion for creation. After doing about a month of research on commercial boards and off-the-shelf components, I decided to pull the trigger on a DIY one.</p>
+
+<div style="text-align: center;"><blockquote class="imgur-embed-pub" lang="en" data-id="a/yb3TD5j"><a href="//imgur.com/a/yb3TD5j">DIY Electric Longboard</a></blockquote><script async="" src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
+
+<p>There are a few basic components of an electric longboard: the longboard deck, trucks, wheels, motors, motor mounts, battery, and an electronic speed controller (ESC). There are also a handful of hardware components as well.</p>
+
+<p>There were many decisions to make in terms of the choice of components for power (pretty much how fast it would go and how much torque), such as power transmission, battery size, and more. Careful research brought me to a cost-effective DIY setup involving belt-driven wheels (as opposed to hub motors which live within the wheels) and a 12s (50.4 Volts) Li-Ion Battery capable of about 15 miles of range. While a “DIY” board can have everything purchased from the basic components, enclosures, and so on, I wanted to actually make something and not just assemble hardware. With this, I decided to custom fabricate the enclosures that house the battery and other electronics.</p>
+
+<p>Initially, both the enclosures for the electronics and the battery were 3D printed from a modified version of a design that was graciously made available on <a href="https://www.thingiverse.com/thing:3528728">Thingiverse</a>. I used more than 750 grams of PETG filament in these cases. Unfortunately, after a few weeks of use, the PETG battery enclosure shattered into countless pieces. I decided that instead of wasting time and money printing a replacement, I would go all out and machine a new one. My initial ideas were to mill out a near-indestructible case from a block of acetal plastic (Delrin) or a more-clunky combination of aluminum angle brackets and sheeting. My roommate helped me discover that 6061 aluminum rectangular tubing was sold cheaply in the giant dimensions of 6” x 2” x 10”. With the tubing and angle brackets, I created an enclosure that is clean and extremely durable. I used the Haas CNC Minimills at my university to cut out the designs.</p>
+
+<p>This project is certainly one of my largest and most fun ones. It is also a convenient method of getting around short distances at home or on campus. While it is technically complete, there are always new ideas on improving it. My latest upgrades/upgrades-in-progress are flashlight mounts for night riding visibility.</p>
+
+<p><strong>Total Cost:</strong> $1000+</p>]]></content><author><name></name></author><summary type="html"><![CDATA[A DIY electric longboard with 3200+ Watts of power capable of about 15 miles range and 32+ mph speed.]]></summary></entry><entry><title type="html">LED Light Tiles</title><link href="https://bshin100.github.io/LED-Light-Tiles/" rel="alternate" type="text/html" title="LED Light Tiles" /><published>2020-09-30T00:00:00+00:00</published><updated>2020-09-30T00:00:00+00:00</updated><id>https://bshin100.github.io/LED-Light-Tiles</id><content type="html" xml:base="https://bshin100.github.io/LED-Light-Tiles/"><![CDATA[<blockquote>
+  <p>Custom 3D printed light tiles using programmable WS2812B LEDs, inspired by nanoleaf.</p>
+</blockquote>
+
+<!-- excerpt-end -->
+<h3 id="time-frame-january-2019---october-2020">Time frame: January, 2019 - October, 2020</h3>
+
+<p><img src="/images/moodlite.gif" alt="Finished product." title="Finished Product." style="float: left; padding: 15px" /></p>
+
+<p>This project is inspired by the triangular RGB LED light tiles commercially available by the company nanoleaf. A passionate maker was inspired by the same product but was similarly not too stoked seeing the price. I decided to follow the open-source guide and design made available by this maker <a href="https://moodlite.co.uk/">called moodlite.</a></p>
+
+<p>These lights are highly customizable, Wi-Fi enabled wall tiles that have programmable LEDs and diffuse through white 3D printed parts, which brings a high-tech and colorful vibe to any room. There are limitless options in terms of integration, colors, and patterns.</p>
+
+<p>I deviated from the main design in that I decided to place three LEDs per corner of the triangular tiles so that they would be brighter. I also initially opted to use a more powerful Arduino-based Wi-Fi chip: the ESP32 as opposed to the ESP8266.</p>
+
+<p>While 3D printing appears to be a matter of clicking a few buttons and having the machine spit out parts, there is much more to that involving hundreds of hours of research that I may detail in a future post. The main difficulties in this 3D printing project involved bed adhesion for such a large surface area. While it seems counter-intuitive that a large surface area has trouble sticking to a print bed, the corners of these parts peeled up and caused warping of the print - in a project where flat and clean prints are imperative to the final product.</p>
+
+<p>I also had to decide the color of my filament. There are many different brands and compositions, even in just PLA, so “white” isn’t a simple choice. The brand of white I had diffused well, and I also tested clear filament at different infill levels to see the effect.</p>
+
+<p><img src="/images/led-testing.gif" alt="Diffusion testing" title="Diffusion testing" style="float: right; padding: 15px; width: 40%" /></p>
+
+<p>The project involved a lot of careful planning and soldering between each strip of LEDs in each tile. Between each strip of LEDs and the edges of the tiles are 3-pin jumper wires (traditionally used for servo motors) that allow the tiles to be modular and rearranged in any pattern. One consideration I had while making this project was that the design used these Dupont wires and connectors to run a giant strip of LEDs in series. These are 28AWG wires that aren’t meant to take a lot of current, and with my reasonably conservative setup of 90 total LEDs, it would certainly be questionable. Each WS2812B LED can theoretically draw up to 60mA of current, which totals to over 5 Amps for my setup. I feared that these tiny wires would burn up under such loads, however seeing that many other people created this project with even larger setups, and that the 60mA rating for the LEDs were for white light at full brightness, I decided to roll the dice on this one and continue on.</p>
+
+<p>The most challenging part was the programming on the microcontroller. I couldn’t manage to run even a basic test to drive the LEDs despite hours of research and combing through forums. I believe it had something to do with logic-level or timing, but even with a logic-level converter, it still didn’t work. The code base for this moodlite project is also open source. I wanted to just get the LEDs running so I currently run the tiles with a comparatively primitive Arduino Nano chip that is not Wi-Fi enabled, with some basic code. Earlier in 2020, I decided to give in and purchase an ESP8266 board which is what the project was designed to run on, but upon an initial test, I still had no luck even on vanilla moodlite code. I took a break on this project to work on some others.</p>
+
+<h3 id="update-10222020">Update 10/22/2020</h3>
+<p>Woohoo! I managed to get the software and tiles running yesterday afternoon. Whether I should’ve spent that time working on this project or my homework is a different subject. Not entirely sure what changed but it works as intended. I started by flashing the basic test code on the ESP32 board, and running a small test strip of the programmable LEDs powered by the 5V output from the board. It miraculously worked despite the fact that it didn’t in the past when I changed nothing. This also proved that a logic-level converter from the ESP32’s 3.3v data line to the LEDs’ 5V data was not necessarily needed to successfully drive the LEDs (but it would be good practice to do so in the future). I also flashed the same basic code to the ESP8266 board, and it also worked. So, both of the Arduino-based Wi-Fi boards were now confirmed to work with my LEDs.</p>
+
+<p>I proceeded to wipe the EEPROM of the ESP8266 board and flash the latest release of the moodlite software, and changed a few configuration settings to match my setup. The web server was up in a few minutes and I was able to access it through my browser and play with the web-side settings. I connected the LEDs the same (correct) way I have been, and to my delight, the commands sent from the server almost instantly were reflected in the patterns the LEDs showed. I’m really not sure what was different about this attempt other than using the latest release of the code, which may have fixed things. What was weird though was that the previous versions were also shown to work amongst the community of other makers who recreated this project. There was a slight error in the JavaScript back-end of the web server that disabled the custom RGB color-picking functionality, but after a quick search on the moodlite forums, this was solved.</p>
+
+<p>I am extremely happy that this project is now fully complete, and my LED wall tiles can be controlled from my computer or any phone.</p>
+
+<p style="text-align: center"><img src="/images/moodlite-working.gif" alt="Finished Product Part 2" title="Finished Product Part 2" style="width: 50%" /></p>
+
+<p>In the future, I intend to perhaps port IFTT protocols (or utilize the integrated MQTT capability) so the tiles can be controlled via voice assistants like the Amazon Alexa. Another cool feature would be to integrate sound-reactivity with a microphone module so it can change with the beat of some music.</p>
+
+<p><strong>Total Cost:</strong> about $80, including filament costs.</p>
+
+<p><em>Last Updated: 10/22/2020</em></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Custom 3D printed light tiles using programmable WS2812B LEDs, inspired by nanoleaf.]]></summary></entry><entry><title type="html">This Website!</title><link href="https://bshin100.github.io/Website/" rel="alternate" type="text/html" title="This Website!" /><published>2020-09-29T00:00:00+00:00</published><updated>2020-09-29T00:00:00+00:00</updated><id>https://bshin100.github.io/Website</id><content type="html" xml:base="https://bshin100.github.io/Website/"><![CDATA[<blockquote>
+  <p>Statically generated blog site using the Jekyll Now framework!
+<!-- excerpt-end --></p>
+</blockquote>
+
+<p>I wanted to make a blog-style website to serve as a portfolio for all of my project work. For some reason, I really didn’t want to use a website builder like Squarespace or Wix. I had made a few websites in the past using these builders, and while convenient, I found them annoying to use. I wanted complete control of my website, and I wanted it to be exactly how I envisioned it without the constraints of typical website builders. Ultimately, I challenged myself to make this website having minimal web-development experience (only a handful of JavaScript and basic HTML courses). This gave me full control of the website, but sacrificed convenience and some aspects of ease-of-use to do so.</p>
+
+<p>I came across the Jekyll framework for static site generation and was intrigued. It was pretty simple at the top level: setup the basic workings and layouts of the site using templates and themes, then adding a new blog post was as easy as creating a new Markdown text file with some front-matter tagging. <a href="https://github.com/barryclark/jekyll-now">Jekyll Now from Barry Clark</a> takes the benefits of Jekyll and makes it even easier by removing a lot of the initial setup process. It also provided a responsive and mobile-friendly base theme. I started off from here.</p>
+
+<h3 id="improving-images">Improving Images</h3>
+<p>Making blog posts for my projects were pretty simple, since it was in Markdown, which makes formatting text, links, and inserting photos pretty easy. However, along the way there were a few challenges that I had to figure out. Firstly, I didn’t like how by default, the images were always full sized and centered. I wanted to control the size, alignment, and have specially formatted captions under certain images. There was always the easy option to use the <code class="language-plaintext highlighter-rouge">figure</code> HTML element since you can embed HTML directly into Markdown files, but I didn’t like how it looked or worked. Instead, after some quick research, I found that I could create a custom HTML stubs that were easily integratable with Markdown. I could use Jekyll’s support for Liquid templating, and pass in simple parameters to insert an image wherever I liked.</p>
+
+<p>This is what <code class="language-plaintext highlighter-rouge">image.html</code> on my website looks like:</p>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="image-wrapper" &gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+    &lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>" title="<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">}}</span>" target="_blank"&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">width</span><span class="w"> </span><span class="p">%}</span>
+        &lt;img src="<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>/<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">img</span><span class="w"> </span><span class="p">}}</span>" alt="<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">}}</span>" width="<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">width</span><span class="w"> </span><span class="p">}}</span>"/&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        &lt;img src="<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>/<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">img</span><span class="w"> </span><span class="p">}}</span>" alt="<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">}}</span>"/&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+    &lt;/a&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">caption</span><span class="w"> </span><span class="p">%}</span>
+        &lt;p class="image-caption"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">caption</span><span class="w"> </span><span class="p">}}</span>&lt;/p&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>And here’s what I need to do to put an image on a particular page:</p>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>image.html<span class="w"> </span><span class="na">img</span><span class="o">=</span><span class="s2">"/images/MPCNC/cnc-partial.jpeg"</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="s2">"50%"</span><span class="err">
+</span><span class="w">    </span><span class="na">title</span><span class="o">=</span><span class="s2">"Table with beginning assembly"</span><span class="err">
+</span><span class="w">    </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Table with part of the CNC mounted."</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+<p>All I need to do is link the image source, optionally define a width, and give it a title and caption. It’s that easy.</p>
+
+<p>This gave me the control I wanted for captioned images. For my purposes, I didn’t end up needing alignment control for captioned images, since I typically put images that I want to be emphasized and not text-wrapped in places where I wanted captions. I also learned a little inline HTML trick for formatting standard Markdown images:</p>
+
+<p><code class="language-plaintext highlighter-rouge">![Bumpy 3D Prints](/images/MPCNC/print-artifacts.jpg "Top: SD Card Print; Bottom: Octoprint"){: style="float: right; width: 40%; padding: 15px"}</code></p>
+
+<p>Around the same time as this part of my journey, I also familiarized myself with how stylesheets worked and played with the styling a little.</p>
+
+<h3 id="better-navigationux">Better Navigation/UX</h3>
+<p>I suppose the standard format for a blog is to have a linear feed of posts in some sort of order, such as chronological. As I added more of my projects to the site, I realized that any random person visiting my website might lose track or not scroll down through all of the projects I’ve done. I wanted to be able to navigate the site in such a way that would display all of my projects I had for easy access and better “at a glance” reception. Further, the default homepage feed that came with Jekyll wasn’t to my liking as it only displayed a short 300-something character excerpt and the title for every post. Along the way, I figured out how to create a front-matter tag in Liquid to have a featured thumbnail image for every page, and an accompanying logic/HTML structure to display thumbnails with all of the posts.</p>
+
+<p>As for the navigation, my method of choice (for now) is a dropdown menu. With a dropdown menu, it achieved my goal of having a quick and easy list of projects to link. That said, after some research, this was going to be more complex than just some HTML/JS if I wanted it to be the way I wanted. I ended up settling on the integration of <a href="https://getbootstrap.com/">Bootstrap</a>, a powerful front-end library, to acheive my goals. I had already known about Bootstrap from a previous endeavor where I wanted my website’s feed to be in a grid, but I had ultimately decided it was too much effort at the time. But this time, I was committed to making this dropdown menu, so I did research and eventually figured out how to integrate Bootstrap. <a href="https://mycyberuniverse.com/jekyll-bootstrap-dynamic-navigation-highlighting-active-element.html">This website</a> was super helpful to help me understand the integration of the two.</p>
+
+<p>By now, I had realized that by picking an easy-to-use framework like Jekyll now was a little <em>too</em> simple in terms of being able to easily add more advanced features such as a dynamic navbar or making a grid layout of elements or having a simple image carousel. Bootstrap was the answer to these problems. After figuring out the integration and resolving clashes between the master Bootstrap stylesheet and the one that came with Jekyll now that I had been modifying, I had an easy way to add complex elements and basically do whatever I wanted.</p>
+
+<h3 id="other-challenges">Other Challenges</h3>
+<p>I had no idea how to use continuous integration (CI) or continuous deployment (CD) before making this site. Honestly, it’s still a bit fuzzy to me, but that’s okay because I’m not a software engineer. The typical Jekyll site is usually deployed with Github Pages, which is a CI/CD pipeline. I had minimal experience setting up the Github workflows for this, but luckily a few guides helped out. Along the journey of upgrading and customizing my website, I found out that the GitHub-supported integration with Jekyll didn’t support many plugins or Jekyll 4 (which I had upgraded to). I had many difficulties during this process, but it was a matter of trying out different build &amp; deploy actions from the <a href="https://github.com/marketplace?type=actions&amp;query=jekyll+">GitHub marketplace</a> and figuring out the support (or lack of) for certain dependencies and sub-dependencies for the framework.</p>
+
+<p>There also were a number of smaller challenges along the way that I’m probably forgetting, but some of them included accommodating a different organizational structure to show off my school projects, customizing Jekyll’s excerpt system, and more.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>Overall, while there were some moments of sheer confusion or hours of troubleshooting, I am satisfied with this website. I have many more features, pages, projects, etc. that I want to add in the future as well. Was this easier or “better” than simply using a website builder? Definitely not. But was this a great learning experience? Absolutely. And I have full control of my website. I wouldn’t say that I like to make things harder for myself, but I enjoy a good challenge.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Statically generated blog site using the Jekyll Now framework!]]></summary></entry></feed>

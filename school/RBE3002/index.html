@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autonomous Pathfinding Robot (RBE 3002) – Brian Shin – Maker & Engineer</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Maker & Engineer">
+    <meta property="og:description" content="Maker & Engineer" />
+    
+    <meta name="author" content="Brian Shin" />
+
+    
+    <meta property="og:title" content="Autonomous Pathfinding Robot (RBE 3002)" />
+    <meta property="twitter:title" content="Autonomous Pathfinding Robot (RBE 3002)" />
+    
+
+    
+    <meta property="og:image" content="/images/beetleweight/beetle-complete.jpg" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brian Shin - Maker & Engineer" href="/feed.xml" />
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Autonomous Pathfinding Robot (RBE 3002) | Brian Shin</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Autonomous Pathfinding Robot (RBE 3002)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Maker &amp; Engineer" />
+<meta property="og:description" content="Maker &amp; Engineer" />
+<link rel="canonical" href="https://bshin100.github.io/school/RBE3002/" />
+<meta property="og:url" content="https://bshin100.github.io/school/RBE3002/" />
+<meta property="og:site_name" content="Brian Shin" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-16T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Autonomous Pathfinding Robot (RBE 3002)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-12-16T00:00:00+00:00","datePublished":"2021-12-16T00:00:00+00:00","description":"Maker &amp; Engineer","headline":"Autonomous Pathfinding Robot (RBE 3002)","mainEntityOfPage":{"@type":"WebPage","@id":"https://bshin100.github.io/school/RBE3002/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bshin100.github.io/images/beetleweight/beetle-complete.jpg"}},"url":"https://bshin100.github.io/school/RBE3002/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+
+          <nav id="navigation" class="navbar navbar-expand-md navbar-light">
+
+            <a class="navbar-brand" href="/">
+              <img src="https://avatars1.githubusercontent.com/u/14339348?s=460&u=3e7e1a489c9b030a0e806731bc457bcb40e8c95a&v=4" width="70" height="70"/>
+            </a>
+            <div class="site-info">
+                <h1 class="site-name"><a href="/">Brian Shin</a></h1>
+                <p class="site-description">Maker & Engineer</p>
+            </div>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                
+                
+                    
+                    
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://bshin100.github.io/index.html" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                              PROJECTS 
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                
+                                    
+                                        <a class="dropdown-item" href="https://bshin100.github.io/Plastic-Antweight-Combat-Robot/">Plastic Antweight Combat Robot</a>
+                                    
+                                
+                                    
+                                        <a class="dropdown-item" href="https://bshin100.github.io/CNC-Router-Table/">CNC Router Table</a>
+                                    
+                                
+                                    
+                                        <a class="dropdown-item" href="https://bshin100.github.io/Beetleweight-Combat-Robot/">Beetleweight Combat Robot</a>
+                                    
+                                
+                                    
+                                        <a class="dropdown-item" href="https://bshin100.github.io/DIY-Electric-Longboard/">DIY Electric Longboard</a>
+                                    
+                                
+                                    
+                                        <a class="dropdown-item" href="https://bshin100.github.io/LED-Light-Tiles/">LED Light Tiles</a>
+                                    
+                                
+                                    
+                                        <div role="separator" class="dropdown-divider"></div>
+                                    
+                                
+                                    
+                                        <a class="dropdown-item" href="https://bshin100.github.io/Website/">Website</a>
+                                    
+                                
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="nav-item ">
+                            <a class="nav-link" href="https://bshin100.github.io/school-projects/">SCHOOL</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="nav-item ">
+                            <a class="nav-link" href="https://bshin100.github.io/about/">ABOUT ME</a>
+                        </li>
+                    
+                
+              </ul>
+              <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+            </div>
+          </nav>
+
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Autonomous Pathfinding Robot (RBE 3002)</h1>
+
+  <div class="entry">
+    <h3 id="rbe-3002---unified-robotics-iv">RBE 3002 - Unified Robotics IV</h3>
+<h4 id="introduction">Introduction</h4>
+<p><strong>Course objectives:</strong>
+Fourth of a four-course sequence introducing foundational theory and practice of robotics engineering from the fields of computer science, electrical engineering and mechanical engineering. The focus of this course is navigation, position estimation and communications. Concepts of dead reckoning, landmark updates, inertial sensors, and radio location will be explored. Control systems as applied to navigation will be presented. Communication, remote control and remote sensing for mobile robots and tele-robotic systems will be introduced. Wireless communications including wireless networks and typical local and wide area networking protocols will be discussed. Considerations will be discussed regarding operation in difficult environments such as underwater, aerospace, hazardous, etc. Laboratory sessions will be directed towards the solution of an open-ended problem over the course of the entire term.</p>
+
+<!-- excerpt-start -->
+<p><strong>Project objectives:</strong>
+Using the <a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/">TurtleBot3</a> robotics platform, explore and map an unknown environment. The robot should be able to localize itself in the world, drive around the environment without hitting obstacles, expand areas of interest on the map, know when the map is complete, and find an optimal path to an arbitrary point within the world. The testing environment was atop a large table with solid boxes acting as the walls of a randomly-created maze.
+<!-- excerpt-end --></p>
+
+<p>The project was split into three phases:</p>
+<ol>
+  <li>Create a map of the environment.
+    <ol>
+      <li>Calculate C-Space.</li>
+      <li>Find a frontier to explore.</li>
+      <li>Plan an optimal path to the frontier.</li>
+      <li>Navigate to the frontier and avoid obstacles.</li>
+      <li>Repeat until a complete map is created.</li>
+      <li>Save the map.</li>
+    </ol>
+  </li>
+  <li>Using the map, navigate back from the current position to the start position while avoiding obstacles.</li>
+  <li>Navigate to a specific goal position within the maze. This position is chosen at random by the professor.</li>
+</ol>
+
+<h4 id="programming">Programming</h4>
+<p>This robot was programmed using <a href="https://www.ros.org/">Robot Operating System (ROS)</a>, which is an open source framework (more of a middleware) that supports robotics research and development. Its flexibility and ease-of-use make it a leading solution in the robotics industry, with companies such as iRobot or ABB adopting some form of ROS. At its core, it enables communications between submodules or nodes in the code base. In this application, ROS runs both locally (aboard a Raspberry Pi on the robot) and “server-side” aboard a PC. Communication between the PC-side and robot-side of ROS is enabled by WiFi.</p>
+
+<p>The TurtleBot3 platform features a 360 degree LiDAR, a 6-axis inertial measurement unit (IMU), precision Dynamixel drive servos, and powerful onboard computation. With these features and ROS, we effectively have a robot that can accomplish the project objectives of mapping &amp; navigating a maze.</p>
+
+<p>The primary navigation stack that ROS provides lays the framework for mapping (<a href="https://wiki.ros.org/gmapping">Gmapping</a>), localization (<a href="https://wiki.ros.org/amcl">AMCL</a>), and navigation (<a href="https://wiki.ros.org/move_base">move_base</a>). Our ROS implementation for this autonomous robot was structured to operate using nine core nodes with eight topics and three services to allow communication between nodes. One main node manages the implementation of the ROS navigation stack and acts as a task scheduler (finite state machine) for the different phases of the project. For optimal path planning, we implemented a version of the <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* algorithm</a> using Euclidean distance between map nodes as the primary heuristic.</p>
+
+<p>The subcomponents of our code were developed incrementally throughout the seven-week term and the biggest challenge was the full integration of all our components. Below you’ll see an RViz capture of the map generated from our program from a real world test.</p>
+
+<p><img src="/images/School/RBE3002/lab4_real_mapping.png" alt="Generated Map" title="Generated RViz map from a real world environment" /></p>
+
+<p>See the full code on <a href="https://github.com/bshin100/">GitHub.</a></p>
+
+<p>I’ve already created a <a href="https://drive.google.com/file/d/1ky9DN6X8yFwB7Jk8Sz0Ui4ItJ9TwaIez/view?usp=sharing">write-up of the project,</a> where you can find more details about the code and math developed in this project. Below is also an embedded version of the final report.</p>
+
+<div style="text-align: center;"><iframe src="https://drive.google.com/file/d/1ky9DN6X8yFwB7Jk8Sz0Ui4ItJ9TwaIez/preview" width="100%" height="360" allow="autoplay"></iframe></div>
+
+<h4 id="conclusion">Conclusion</h4>
+<p>This project turned out to be a great success and was one of my favorite projects in my robotics curriculum. In fact, my team and I were able to achieve the fastest time among several other teams to complete Phase 3 runs. I really enjoyed this project as it felt very “rooted” in the real world with a suite of advanced sensors and software packages that are used similarly to develop autonomous robots/vehicles in the real world. While <code class="language-plaintext highlighter-rouge">gmapping</code> and <code class="language-plaintext highlighter-rouge">AMCL</code> did hide much of the SLAM process in a “black box”, the implementation to intelligently path find using this data was the main takeaway from this project. Processing through and filtering out noisy data and navigating while localization shifted the robot position were the real challenges to overcome.</p>
+
+  </div>
+
+  <div class="date">
+    Written on December 16, 2021
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:beshin@wpi.edu"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/bshin100"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/bshin100"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'G-3YMZ699CD0', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/school/RBE3002/',
+		  'title': 'Autonomous Pathfinding Robot (RBE 3002)'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
